@@ -1,0 +1,143 @@
+/* Navbar principal */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 05px 60px;
+}
+
+/* Grupo logo + nome */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  /* espaço entre logo e texto */
+}
+
+/* Diminuir logo */
+.brand img {
+  width: 80px;
+  height: auto;
+}
+
+/* Estilo do nome */
+.brand-name {
+  color: rgb(255, 255, 255);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* CONTAINER DOS CARDS */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  max-width: 1100px;
+  /* aumenta para caber 3 cards confortáveis */
+  margin: 0 auto;
+}
+
+.card-planeta {
+  flex: 0 0 calc(33.333% - 20px);
+  /* largura fixa para 3 por linha */
+  max-width: none;
+  /* remove limite que atrapalha */
+}
+
+button {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  cursor: pointer;
+}
+
+/* ============================= */
+/* CARD PLANETA */
+/* ============================= */
+.card-planeta {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: rgba(20, 20, 20, 0.9);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+  color: #f1f1f1;
+  max-width: 350px;
+  /* tamanho máximo do card */
+  flex: 1 1 300px;
+  /* flexível e responsivo */
+  cursor: pointer;
+  /* indica que a imagem é clicável */
+  transition: all 0.3s;
+}
+
+/* Efeito hover */
+.card-planeta:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-3px);
+}
+
+/* ============================= */
+/* FOTO DO PLANETA */
+/* ============================= */
+.col-foto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 0 auto;
+  /* mantém tamanho da imagem */
+  margin-right: 20px;
+}
+
+.col-foto img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.col-foto .nome {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* ============================= */
+/* DADOS DO PLANETA */
+/* ============================= */
+.col-dados {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.col-dados .item {
+  background-color: rgba(50, 50, 50, 0.7);
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+/* ============================= */
+/* RESPONSIVO - CELULAR */
+/* ============================= */
+@media (max-width: 767px) {
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-planeta {
+    flex-direction: column;
+    align-items: center;
+    max-width: 90%;
+  }
+
+  .col-foto {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}

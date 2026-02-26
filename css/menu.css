@@ -1,0 +1,60 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* HEADER FIXO E TRANSPARENTE */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 60px;
+  z-index: 1000;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* LOGO */
+.logo {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* MENU */
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color: #ffd500;
+}
+
+/* HERO PARA TESTE */
+.hero {
+  height: 100vh;
+  background: linear-gradient(to right, #000000, #434343);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2rem;
+}
