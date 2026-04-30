@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  /* remove margens padrão */
+  padding: 0;
+  /* remove padding padrão */
+  background-color: #000;
+  /* fundo preto */
+  color: #fff;
+  /* texto branco para contraste */
+  font-family: Arial, sans-serif;
+  /* fonte padrão Arial */
+  line-height: 1.6;
+  /* espaçamento agradável entre linhas */
+}
+
+.imagem-home {
+  position: relative;
+  /* ESSENCIAL */
+  width: 100%;
+  height: 900px;
+  overflow: hidden;
+  height: 500px;
+}
+
+.imagem-home img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* evita distorção */
+}
+
+.conteudo {
+  margin-top: 40px;
+}
+
+.imagem-home h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+}
+.imagem-home h2 {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+}
+.titulo-planeta {
+  max-width: 1200px;
+  /* largura do conteúdo */
+  margin: 50px auto;
+  /* espaço entre seções */
+  padding: 0 20px;
+  /* espaçamento interno lateral */
+  color: white;
+  /* cor do texto */
+}
+
+.titulo-planeta h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  text-align: center;
+  /* centraliza horizontalmente */
+}
+
+.titulo-planeta h3 {
+  font-size: 1rem;
+  line-height: 1.6;
+  font-weight: normal;
+}
+
+
+
