@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curiosidades Cósmicas</title>
+
+  <!-- Ícone -->
+  <link rel="shortcut icon" href="imagens/terra-ico.ico">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/curiosidades.css">
+  <link rel="stylesheet" href="css/planetas.css">
+</head>
+
+<body>
+
+  <!-- ============================= -->
+  <!-- NAVBAR -->
+  <!-- ============================= -->
+  <header class="header">
+    <nav class="navbar">
+
+      <div class="brand">
+        <img src="imagens/logo.ico" alt="Logo">
+        <span class="brand-name">PSS Project Solar System</span>
+      </div>
+
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="planetas.html">Planetas</a></li>
+        <li><a href="curiosidades.html">Curiosidades</a></li>
+        <li><a href="progeto.html">Projeto</a></li>
+      </ul>
+
+    </nav>
+  </header>
+
+  <!-- ============================= -->
+  <!-- IMAGEM DE TOPO -->
+  <!-- ============================= -->
+<div class="imagem-home">
+  <img src="imagens/estrela.png" alt="Estrelas">
+  <h1>Tipos de Estrelas</h1>
+</div>
+
+<div class="layout">
+
+  <aside class="sidebar">
+    <ul>
+      <li><a href="curiosidades.html">Objetos extremos</a></li>
+      <li><a href="estrelas.html">Tipos de estrelas</a></li>
+      <li><a href="estrotuas.html">Estruturas do universo</a></li>
+      <li><a href="misterios.html">Mistérios do universo</a></li>
+    </ul>
+  </aside>
+
+  <main class="content">
+
+    <section class="titulo-planeta">
+      <h2>Ciclos e formas das estrelas</h2>
+      <p>
+        Estrelas não são todas iguais. Elas nascem, evoluem e morrem em processos que podem durar bilhões de anos.
+        Cada tipo revela um estágio diferente da evolução estelar e ajuda a entender como o universo se transforma ao longo do tempo.
+      </p>
+    </section>
+
+    <section class="cards-container">
+
+      <!-- Anã Vermelha -->
+      <div class="card-planeta">
+        <div class="col-foto">
+          <img src="imagens/neutrons.png">
+          <span class="nome">Anã Vermelha</span>
+        </div>
+        <div class="col-dados">
+          <div class="item">Tamanho: Pequeno</div>
+          <div class="item">Temperatura: Baixa</div>
+          <div class="item">Vida útil: Trilhões de anos</div>
+          <div class="item">Curiosidade: Tipo mais comum do universo</div>
+        </div>
+      </div>
+
+      <!-- Gigante Vermelha -->
+      <div class="card-planeta">
+        <div class="col-foto">
+          <img src="imagens/supermassivo.png">
+          <span class="nome">Gigante Vermelha</span>
+        </div>
+        <div class="col-dados">
+          <div class="item">Tamanho: Muito grande</div>
+          <div class="item">Fase: Final da vida</div>
+          <div class="item">Energia: Instável</div>
+          <div class="item">Curiosidade: O Sol se tornará uma</div>
+        </div>
+      </div>
+
+      <!-- Anã Branca -->
+      <div class="card-planeta">
+        <div class="col-foto">
+          <img src="imagens/pulsar.png">
+          <span class="nome">Anã Branca</span>
+        </div>
+        <div class="col-dados">
+          <div class="item">Tamanho: Pequeno</div>
+          <div class="item">Densidade: Muito alta</div>
+          <div class="item">Estado: Estrela morta</div>
+          <div class="item">Curiosidade: Resíduo de estrelas como o Sol</div>
+        </div>
+      </div>
+
+      <!-- Supernova -->
+      <div class="card-planeta">
+        <div class="col-foto">
+          <img src="imagens/meg.png">
+          <span class="nome">Supernova</span>
+        </div>
+        <div class="col-dados">
+          <div class="item">Tipo: Explosão estelar</div>
+          <div class="item">Energia: Extremamente alta</div>
+          <div class="item">Duração: Curta</div>
+          <div class="item">Curiosidade: Cria elementos pesados</div>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+</div>
+    <script>
+    const header = document.querySelector(".header");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 50) {
+        header.classList.add("sumir");
+      } else {
+        header.classList.remove("sumir");
+      }
+    });
+  </script>
+
+</body>
+</html>

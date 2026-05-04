@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curiosidades Cósmicas</title>
+
+  <!-- Ícone -->
+  <link rel="shortcut icon" href="imagens/terra-ico.ico">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/curiosidades.css">
+  <link rel="stylesheet" href="css/planetas.css">
+</head>
+
+<body>
+
+  <!-- ============================= -->
+  <!-- NAVBAR -->
+  <!-- ============================= -->
+  <header class="header">
+    <nav class="navbar">
+
+      <div class="brand">
+        <img src="imagens/logo.ico" alt="Logo">
+        <span class="brand-name">PSS Project Solar System</span>
+      </div>
+
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="planetas.html">Planetas</a></li>
+        <li><a href="curiosidades.html">Curiosidades</a></li>
+        <li><a href="progeto.html">Projeto</a></li>
+      </ul>
+
+    </nav>
+  </header>
+
+  <!-- ============================= -->
+  <!-- IMAGEM DE TOPO -->
+  <!-- ============================= -->
+<div class="imagem-home">
+  <img src="imagens/pilar.webp">
+  <h1>Estruturas do Universo</h1>
+</div>
+
+<div class="layout">
+  <aside class="sidebar">
+    <ul>
+      <li><a href="curiosidades.html">Objetos extremos</a></li>
+      <li><a href="estrelas.html">Tipos de estrelas</a></li>
+      <li><a href="estrotuas.html">Estruturas do universo</a></li>
+      <li><a href="misterios.html">Mistérios do universo</a></li>
+    </ul>
+  </aside>
+
+  <main class="content">
+
+    <section class="titulo-planeta">
+      <h2>A escala do cosmos</h2>
+      <p>
+        O universo é organizado em estruturas gigantescas que vão muito além de planetas e estrelas.
+        Essas formações revelam a dimensão real do cosmos e como a matéria se distribui em larga escala.
+      </p>
+    </section>
+
+    <section class="cards-container">
+
+      <div class="card-planeta">
+        <div class="col-foto">
+          <img src="imagens/buraconegro.png">
+          <span class="nome">Nebulosa</span>
+        </div>
+        <div class="col-dados">
+          <div class="item">Tipo: Nuvem de gás</div>
+          <div class="item">Função: Formação de estrelas</div>
+          <div class="item">Composição: Hidrogênio e poeira</div>
+          <div class="item">Curiosidade: Berço estelar</div>
+        </div>
+      </div>
+
+      <div class="card-planeta">
+        <div class="col-foto">
+          <img src="imagens/supermassivo.png">
+          <span class="nome">Galáxia</span>
+        </div>
+        <div class="col-dados">
+          <div class="item">Escala: Bilhões de estrelas</div>
+          <div class="item">Formato: Variável</div>
+          <div class="item">Centro: Buraco negro</div>
+          <div class="item">Curiosidade: Vivemos em uma</div>
+        </div>
+      </div>
+
+      <div class="card-planeta">
+        <div class="col-foto">
+          <img src="imagens/pulsar.png">
+          <span class="nome">Quasar</span>
+        </div>
+        <div class="col-dados">
+          <div class="item">Energia: Extremamente alta</div>
+          <div class="item">Origem: Buraco negro ativo</div>
+          <div class="item">Visibilidade: Muito distante</div>
+          <div class="item">Curiosidade: Um dos objetos mais brilhantes</div>
+        </div>
+      </div>
+
+      <div class="card-planeta">
+        <div class="col-foto">
+          <img src="imagens/meg.png">
+          <span class="nome">Aglomerado</span>
+        </div>
+        <div class="col-dados">
+          <div class="item">Tipo: Grupo de galáxias</div>
+          <div class="item">Escala: Enorme</div>
+          <div class="item">Gravidade: Compartilhada</div>
+          <div class="item">Curiosidade: Estrutura maior que galáxias</div>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+</div>
+    <script>
+    const header = document.querySelector(".header");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 50) {
+        header.classList.add("sumir");
+      } else {
+        header.classList.remove("sumir");
+      }
+    });
+  </script>
+
+</body>
+</html>

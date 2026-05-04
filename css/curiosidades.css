@@ -22,6 +22,25 @@ Esse é o container geral:
 .layout {
   display: flex;
 }
+/* Grupo logo + nome */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Logo */
+.brand img {
+  width: 80px;
+  height: auto;
+}
+
+/* Nome da marca */
+.brand-name {
+  color: rgb(255, 255, 255);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
 
 /* ============================= */
 /* SIDEBAR (já existente, mantida) */
