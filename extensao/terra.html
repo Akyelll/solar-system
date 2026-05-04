@@ -33,6 +33,120 @@
     <h1>TERRA</h1>
     <h2>"O Milagre Azul"</h2>
   </div>
+  <div class="layout">
+<aside class="sidebar">
+  <ul>
+    <li><a href="#ambiente">🌡️ Ambiente</a></li>
+    <li><a href="#estrutura">🌍 Estrutura</a></li>
+    <li><a href="#movimento">🔄 Movimento</a></li>
+    <li><a href="#fenomenos">🌀 Fenômenos</a></li>
+    <li><a href="#sistema">🛰️ Sistema</a></li>
+    <li><a href="#exploracao">🚀 Exploração</a></li>
+  </ul>
 
+  <hr class="divisor">
+
+
+
+  <ul class="menu-planetas">
+    <li><a href="mercurio.html"><img src="../imagens/mercurio.ico"> Mercúrio</a></li>
+    <li><a href="venus.html"><img src="../imagens/venus.ico"> Vênus</a></li>
+    <li><a href="marte.html"><img src="../imagens/marte.ico"> Marte</a></li>
+    <li><a href="jupiter.html"><img src="../imagens/jupiter.ico"> Júpiter</a></li>
+    <li><a href="saturno.html"><img src="../imagens/saturno.ico"> Saturno</a></li>
+    <li><a href="urano.html"><img src="../imagens/urano.ico"> Urano</a></li>
+    <li><a href="netuno.html"><img src="../imagens/netuno.ico"> Netuno</a></li>
+    <li><a href="plutao.html"><img src="../imagens/plutao.ico"> Plutão</a></li>
+  </ul>
+</aside>
+    </aside>
+
+    <main class="content">
+
+      <section id="ambiente">
+        <h2>🌍 A Terra: O Equilíbrio Raro</h2>
+
+        <p>
+          A Terra é, até onde sabemos, o único planeta capaz de sustentar vida de forma complexa e contínua. Isso não
+          acontece por acaso, mas por uma combinação extremamente específica de fatores. Sua distância em relação ao Sol
+          permite a existência de água em estado líquido — um dos elementos mais importantes para a vida. Além disso,
+          sua atmosfera rica em nitrogênio e oxigênio cria uma camada protetora que regula a temperatura e filtra
+          radiações perigosas.
+        </p>
+
+        <p>
+          Outro ponto essencial é o campo magnético terrestre, que atua como um escudo invisível contra partículas
+          solares altamente energéticas. Sem ele, a atmosfera poderia ser lentamente destruída, como ocorreu em Marte. A
+          presença de placas tectônicas também desempenha um papel fundamental, reciclando nutrientes e mantendo o
+          equilíbrio climático ao longo de milhões de anos.
+        </p>
+
+        <h3>A Terra não é comum — ela é uma exceção</h3>
+
+        <p>
+          Quando analisamos esses fatores em conjunto, fica claro que a Terra não é apenas habitável — ela é resultado
+          de um equilíbrio delicado, difícil de replicar. Isso levanta uma questão inevitável: quantos outros planetas
+          no universo conseguiram atingir esse mesmo nível de estabilidade?
+        </p>
+
+
+        <figure class="imagem-planeta">
+          <img src="../imagens/vida-na-terra-capa.jpg" alt="Vida na Terra">
+          <figcaption>"Vida"</figcaption>
+        </figure>
+      </section>
+
+
+      <section>
+
+
+        <h2>🌱 Um Planeta Vivo em Constante Transformação</h2>
+
+        <p>
+          Diferente da maioria dos planetas do sistema solar, a Terra não é estática. Ela está em constante mudança,
+          tanto na superfície quanto em seu interior. Vulcões, terremotos e movimentos das placas tectônicas mostram que
+          o planeta ainda é geologicamente ativo. Esses processos, apesar de muitas vezes destrutivos, são essenciais
+          para a renovação da superfície e para a manutenção das condições que permitem a vida.
+        </p>
+
+        <p>
+          Além disso, a Terra abriga uma biodiversidade extremamente complexa. Milhões de espécies interagem em sistemas
+          ecológicos interdependentes, criando um ambiente dinâmico e resiliente. Esse equilíbrio, no entanto, não é
+          garantido. Pequenas alterações podem gerar impactos significativos, o que torna a estabilidade do planeta algo
+          mais frágil do que parece.
+        </p>
+
+        <h3>Um sistema em equilíbrio entre ordem e caos</h3>
+
+        <p>
+          Comparada a gigantes gasosos como Júpiter ou ambientes extremos como Vênus, a Terra se destaca não pela força
+          ou tamanho, mas pela sua capacidade de sustentar e adaptar a vida. Isso transforma o planeta em algo mais do
+          que um corpo celeste — ele é um sistema vivo, em equilíbrio contínuo entre ordem e caos.
+        </p>
+
+        <figure class="imagem-planeta">
+          <img src="../imagens/mudança.png" alt="Transformações da Terra">
+          <figcaption>"Transformações do planeta ao longo do tempo"</figcaption>
+        </figure>
+
+      </section>
+
+    </main>
+  </div>
+  <footer class="footer">
+    <p>© <span id="ano"></span> Felipe Hellmann — Projeto Sistema Solar</p>
+  </footer>
+  <script>
+  const header = document.querySelector(".header");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 50) {
+      header.classList.add("sumir");
+    } else {
+      header.classList.remove("sumir");
+    }
+  });
+</script>
 </body>
+
 </html>

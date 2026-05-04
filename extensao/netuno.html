@@ -34,6 +34,97 @@
     <h1>NETUNO</h1>
     <h2>"O Senhor das Tempestades"</h2>
   </div>
+  <div class="layout">
+    <aside class="sidebar">
+      <ul>
+        <li><a href="#ambiente">🌡️ Ambiente</a></li>
+        <li><a href="#estrutura">🌍 Estrutura</a></li>
+        <li><a href="#movimento">🔄 Movimento</a></li>
+        <li><a href="#fenomenos">🌀 Fenômenos</a></li>
+        <li><a href="#sistema">🛰️ Sistema</a></li>
+        <li><a href="#exploracao">🚀 Exploração</a></li>
+      </ul>
 
+      <hr class="divisor">
+
+
+
+      <ul class="menu-planetas">
+        <li><a href="mercurio.html"><img src="../imagens/mercurio.ico"> Mercúrio</a></li>
+        <li><a href="venus.html"><img src="../imagens/venus.ico"> Vênus</a></li>
+        <li><a href="marte.html"><img src="../imagens/marte.ico"> Marte</a></li>
+        <li><a href="jupiter.html"><img src="../imagens/jupiter.ico"> Júpiter</a></li>
+        <li><a href="saturno.html"><img src="../imagens/saturno.ico"> Saturno</a></li>
+        <li><a href="urano.html"><img src="../imagens/urano.ico"> Urano</a></li>
+        <li><a href="terra.html"><img src="../imagens/terra.ico"> Terra</a></li>
+        <li><a href="plutao.html"><img src="../imagens/plutao.ico"> Plutão</a></li>
+      </ul>
+    </aside>
+    <main class="content">
+
+      <section id="ambiente">
+        <h2>🔵 Netuno: O Gigante dos Ventos</h2>
+
+        <p>
+          Netuno é o planeta mais distante do Sol e apresenta uma atmosfera extremamente ativa. Seus ventos são os mais
+          rápidos do sistema solar, podendo ultrapassar 2.000 km/h.
+        </p>
+
+        <p>
+          Mesmo recebendo pouca energia solar, o planeta mantém uma dinâmica intensa, indicando fontes internas de
+          calor.
+        </p>
+
+        <h3>Energia além da distância</h3>
+
+        <p>
+          A atividade atmosférica de Netuno desafia expectativas, mostrando que a distância do Sol não determina
+          completamente o comportamento de um planeta.
+        </p>
+
+        <figure class="imagem-planeta">
+          <img src="../imagens/atimosferanetuno.jpg">
+          <figcaption>Tempestades intensas e atmosfera ativa</figcaption>
+        </figure>
+      </section>
+
+      <section>
+        <h2>🌊 Estrutura e Movimento</h2>
+
+        <p>
+          Netuno é um gigante de gelo, composto por uma mistura de gases e materiais voláteis. Sua estrutura interna é
+          complexa e ainda pouco compreendida.
+        </p>
+
+        <p>
+          O planeta possui várias luas, sendo Tritão a mais importante, com características geológicas ativas.
+        </p>
+
+        <h3>Um sistema em constante atividade</h3>
+
+        <p>
+          Mesmo distante, Netuno demonstra que o sistema solar ainda guarda regiões dinâmicas e pouco exploradas.
+        </p>
+
+        <figure class="imagem-planeta">
+          <img src="../imagens/luaneturno.jpg">
+          <figcaption>Interação com suas luas e dinâmica interna</figcaption>
+        </figure>
+      </section>
+
+    </main>
+  </div>
+  <script>
+    const header = document.querySelector(".header");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 50) {
+        header.classList.add("sumir");
+      } else {
+        header.classList.remove("sumir");
+      }
+    });
+  </script>
 </body>
+
 </html>

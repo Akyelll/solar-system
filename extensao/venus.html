@@ -31,8 +31,105 @@
   <div class="imagem-home">
     <img src="../imagens/venus.jpg" alt="Vênus">
     <h1>VÊNUS</h1>
-    <h2>"O Verdadeiro Inferno Planetário"</h2>
+    <h2>"O inferno no sistema solar"</h2>
   </div>
+  <div class="layout">
+    <aside class="sidebar">
+      <ul>
+        <li><a href="#ambiente">🌡️ Ambiente</a></li>
+        <li><a href="#estrutura">🌍 Estrutura</a></li>
+        <li><a href="#movimento">🔄 Movimento</a></li>
+        <li><a href="#fenomenos">🌀 Fenômenos</a></li>
+        <li><a href="#sistema">🛰️ Sistema</a></li>
+        <li><a href="#exploracao">🚀 Exploração</a></li>
+      </ul>
 
+      <hr class="divisor">
+
+    
+
+      <ul class="menu-planetas">
+        <li><a href="mercurio.html"><img src="../imagens/mercurio.ico"> Mercúrio</a></li>
+        <li><a href="terra.html"><img src="../imagens/terra.ico"> Terra</a></li>
+        <li><a href="marte.html"><img src="../imagens/marte.ico"> Marte</a></li>
+        <li><a href="jupiter.html"><img src="../imagens/jupiter.ico"> Júpiter</a></li>
+        <li><a href="saturno.html"><img src="../imagens/saturno.ico"> Saturno</a></li>
+        <li><a href="urano.html"><img src="../imagens/urano.ico"> Urano</a></li>
+        <li><a href="netuno.html"><img src="../imagens/netuno.ico"> Netuno</a></li>
+        <li><a href="plutao.html"><img src="../imagens/plutao.ico"> Plutão</a></li>
+      </ul>
+    </aside>
+    <main class="content">
+
+      <section id="ambiente">
+        <main class="content">
+
+          <section id="ambiente">
+            <h2>🌫️ Vênus: O Inferno Atmosférico</h2>
+
+            <p>
+              Vênus possui uma atmosfera extremamente densa, composta majoritariamente por dióxido de carbono, o que
+              provoca um efeito estufa intenso e contínuo. Esse fenômeno transforma o planeta no mais quente do sistema
+              solar.
+            </p>
+
+            <p>
+              As temperaturas na superfície ultrapassam 460°C, criando condições capazes de derreter metais. Além disso,
+              a pressão atmosférica é esmagadora, equivalente a estar a grandes profundidades nos oceanos da Terra.
+            </p>
+
+            <h3>Um sistema fora de equilíbrio</h3>
+
+            <p>
+              A retenção constante de calor e a composição química da atmosfera criam um ambiente completamente instável
+              e hostil, evidenciando os efeitos extremos do aquecimento descontrolado.
+            </p>
+
+            <figure class="imagem-planeta">
+              <img src="../imagens/venussuperficie.jpeg">
+              <figcaption>Atmosfera densa e altamente tóxica</figcaption>
+            </figure>
+          </section>
+
+          <section>
+            <h2>🔥 Estrutura e Movimento</h2>
+
+            <p>
+              Apesar de ser semelhante em tamanho à Terra, Vênus apresenta diferenças profundas em sua dinâmica. Sua
+              rotação é extremamente lenta e ocorre no sentido oposto ao da maioria dos planetas.
+            </p>
+
+            <p>
+              Esse movimento incomum faz com que um dia em Vênus seja mais longo do que seu próprio ano, criando um
+              ciclo temporal único.
+            </p>
+
+            <h3>Um planeta que desafia padrões</h3>
+
+            <p>
+              Essas características reforçam como pequenas variações iniciais podem levar a resultados completamente
+              distintos na evolução de um planeta.
+            </p>
+
+            <figure class="imagem-planeta">
+              <img src="../imagens/venusrotacao.jpg">
+              <figcaption>Movimento incomum e condições extremas</figcaption>
+            </figure>
+          </section>
+
+        </main>
+  </div>
+<script>
+  const header = document.querySelector(".header");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 50) {
+      header.classList.add("sumir");
+    } else {
+      header.classList.remove("sumir");
+    }
+  });
+</script>
 </body>
+
 </html>

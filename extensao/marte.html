@@ -33,6 +33,97 @@
     <h1>MARTE</h1>
     <h2>"O Guerreiro Vermelho"</h2>
   </div>
+  <div class="layout">
+    <aside class="sidebar">
+      <ul>
+        <li><a href="#ambiente">🌡️ Ambiente</a></li>
+        <li><a href="#estrutura">🌍 Estrutura</a></li>
+        <li><a href="#movimento">🔄 Movimento</a></li>
+        <li><a href="#fenomenos">🌀 Fenômenos</a></li>
+        <li><a href="#sistema">🛰️ Sistema</a></li>
+        <li><a href="#exploracao">🚀 Exploração</a></li>
+      </ul>
 
+      <hr class="divisor">
+
+      <ul class="menu-planetas">
+        <li><a href="mercurio.html"><img src="../imagens/mercurio.ico"> Mercúrio</a></li>
+        <li><a href="venus.html"><img src="../imagens/venus.ico"> Vênus</a></li>
+        <li><a href="terra.html"><img src="../imagens/terra.ico"> Terra</a></li>
+        <li><a href="jupiter.html"><img src="../imagens/jupiter.ico"> Júpiter</a></li>
+        <li><a href="saturno.html"><img src="../imagens/saturno.ico"> Saturno</a></li>
+        <li><a href="urano.html"><img src="../imagens/urano.ico"> Urano</a></li>
+        <li><a href="netuno.html"><img src="../imagens/netuno.ico"> Netuno</a></li>
+        <li><a href="plutao.html"><img src="../imagens/plutao.ico"> Plutão</a></li>
+      </ul>
+    </aside>
+    </aside>
+    <main class="content">
+
+      <section id="ambiente">
+        <h2>🔴 Marte: O Planeta que Perdeu seu Equilíbrio</h2>
+
+        <p>
+          Marte é um planeta frio e seco, com uma atmosfera fina que não consegue manter calor suficiente para sustentar
+          água líquida de forma estável. Sua superfície é marcada por desertos e temperaturas extremas.
+        </p>
+
+        <p>
+          Apesar disso, há fortes evidências de que o planeta já teve rios, lagos e possivelmente oceanos, indicando um
+          passado mais ativo e potencialmente habitável.
+        </p>
+
+        <h3>Um passado mais promissor</h3>
+
+        <p>
+          A perda de sua atmosfera ao longo do tempo transformou Marte em um ambiente hostil, levantando questões sobre
+          sua evolução e possíveis formas de vida antigas.
+        </p>
+
+        <figure class="imagem-planeta">
+          <img src="../imagens/matersuperficie.webp">
+          <figcaption>Superfície árida e vestígios de água antiga</figcaption>
+        </figure>
+      </section>
+
+      <section>
+        <h2>🧭 Estrutura e Possibilidades</h2>
+
+        <p>
+          Marte é um planeta rochoso com formações geológicas marcantes, incluindo vulcões gigantes e vales profundos.
+          Sua estrutura interna indica que já houve intensa atividade geológica.
+        </p>
+
+        <p>
+          Hoje, ele é o principal foco de exploração espacial, sendo considerado um candidato para futuras missões
+          humanas.
+        </p>
+
+        <h3>Entre o passado e o futuro</h3>
+
+        <p>
+          Marte representa uma ponte entre a história do sistema solar e as possibilidades futuras da exploração humana.
+        </p>
+
+        <figure class="imagem-planeta">
+          <img src="../imagens/martepassado.jpg">
+          <figcaption>Exploração e potencial futuro</figcaption>
+        </figure>
+      </section>
+
+    </main>
+  </div>
+  <script>
+    const header = document.querySelector(".header");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 50) {
+        header.classList.add("sumir");
+      } else {
+        header.classList.remove("sumir");
+      }
+    });
+  </script>
 </body>
+
 </html>

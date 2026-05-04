@@ -21,7 +21,7 @@
       </div>
 
       <ul class="menu">
-        <li><a href="../home.html">Home</a></li>
+        <li><a href="../index.html">Home</a></li>
         <li><a href="../planetas.html">Planetas</a></li>
         <li><a href="../curiosidades.html">Curiosidades</a></li>
         <li><a href="../projeto.html">Projeto</a></li>
@@ -34,6 +34,97 @@
     <h1>JÚPITER</h1>
     <h2>"O Gigante Implacável"</h2>
   </div>
+  <div class="layout">
+    <aside class="sidebar">
+      <ul>
+        <li><a href="#ambiente">🌡️ Ambiente</a></li>
+        <li><a href="#estrutura">🌍 Estrutura</a></li>
+        <li><a href="#movimento">🔄 Movimento</a></li>
+        <li><a href="#fenomenos">🌀 Fenômenos</a></li>
+        <li><a href="#sistema">🛰️ Sistema</a></li>
+        <li><a href="#exploracao">🚀 Exploração</a></li>
+      </ul>
 
+      <hr class="divisor">
+
+      <span class="sidebar-titulo">Explorar planetas</span>
+
+      <ul class="menu-planetas">
+        <li><a href="mercurio.html"><img src="../imagens/mercurio.ico"> Mercúrio</a></li>
+        <li><a href="venus.html"><img src="../imagens/venus.ico"> Vênus</a></li>
+        <li><a href="marte.html"><img src="../imagens/marte.ico"> Marte</a></li>
+        <li><a href="terra.html"><img src="../imagens/terra.ico"> Terra</a></li>
+        <li><a href="saturno.html"><img src="../imagens/saturno.ico"> Saturno</a></li>
+        <li><a href="urano.html"><img src="../imagens/urano.ico"> Urano</a></li>
+        <li><a href="netuno.html"><img src="../imagens/netuno.ico"> Netuno</a></li>
+        <li><a href="plutao.html"><img src="../imagens/plutao.ico"> Plutão</a></li>
+      </ul>
+    </aside>
+    </aside>
+    <main class="content">
+
+      <section id="ambiente">
+        <h2>🟠 Júpiter: O Gigante Gasoso</h2>
+
+        <p>
+          Júpiter é o maior planeta do sistema solar e é composto principalmente por hidrogênio e hélio. Sua atmosfera é
+          extremamente dinâmica, marcada por tempestades intensas e faixas de nuvens em constante movimento.
+        </p>
+
+        <p>
+          A Grande Mancha Vermelha, uma tempestade gigantesca, está ativa há séculos e exemplifica a força dos fenômenos
+          presentes no planeta.
+        </p>
+
+        <h3>Força em escala colossal</h3>
+
+        <p>
+          Seu tamanho e massa exercem forte influência gravitacional, impactando outros corpos do sistema solar.
+        </p>
+
+        <figure class="imagem-planeta">
+          <img src="../imagens/jupiterbase.avif">
+          <figcaption>Tempestades massivas e atmosfera turbulenta</figcaption>
+        </figure>
+      </section>
+
+      <section>
+        <h2>🌪️ Estrutura e Influência</h2>
+
+        <p>
+          Júpiter não possui uma superfície sólida definida, sendo composto por camadas de gás que se tornam cada vez
+          mais densas em direção ao núcleo.
+        </p>
+
+        <p>
+          Além disso, possui dezenas de luas e um sistema complexo ao seu redor.
+        </p>
+
+        <h3>O guardião gravitacional</h3>
+
+        <p>
+          Sua presença ajuda a desviar asteroides, atuando como uma espécie de escudo para planetas internos.
+        </p>
+
+        <figure class="imagem-planeta">
+          <img src="../imagens/mancha.jpg">
+          <figcaption>Influência gravitacional no sistema solar</figcaption>
+        </figure>
+      </section>
+
+    </main>
+  </div>
+  <script>
+    const header = document.querySelector(".header");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 50) {
+        header.classList.add("sumir");
+      } else {
+        header.classList.remove("sumir");
+      }
+    });
+  </script>
 </body>
+
 </html>

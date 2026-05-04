@@ -34,6 +34,98 @@
     <h1>URANO</h1>
     <h2>"O Planeta Inclinado"</h2>
   </div>
+  <div class="layout">
 
+    <aside class="sidebar">
+      <ul>
+        <li><a href="#ambiente">🌡️ Ambiente</a></li>
+        <li><a href="#estrutura">🌍 Estrutura</a></li>
+        <li><a href="#movimento">🔄 Movimento</a></li>
+        <li><a href="#fenomenos">🌀 Fenômenos</a></li>
+        <li><a href="#sistema">🛰️ Sistema</a></li>
+        <li><a href="#exploracao">🚀 Exploração</a></li>
+      </ul>
+
+      <hr class="divisor">
+
+     
+
+      <ul class="menu-planetas">
+        <li><a href="mercurio.html"><img src="../imagens/mercurio.ico"> Mercúrio</a></li>
+        <li><a href="venus.html"><img src="../imagens/venus.ico"> Vênus</a></li>
+        <li><a href="marte.html"><img src="../imagens/marte.ico"> Marte</a></li>
+        <li><a href="jupiter.html"><img src="../imagens/jupiter.ico"> Júpiter</a></li>
+        <li><a href="saturno.html"><img src="../imagens/saturno.ico"> Saturno</a></li>
+        <li><a href="terra.html"><img src="../imagens/terra.ico"> Terra</a></li>
+        <li><a href="netuno.html"><img src="../imagens/netuno.ico"> Netuno</a></li>
+        <li><a href="plutao.html"><img src="../imagens/plutao.ico"> Plutão</a></li>
+      </ul>
+    </aside>
+    <main class="content">
+
+      <section id="ambiente">
+        <h2>🧊 Urano: O Planeta Inclinado</h2>
+
+        <p>
+          Urano é um gigante gasoso que se destaca por sua inclinação extrema, girando praticamente de lado em relação
+          ao plano orbital. Essa característica cria estações prolongadas e incomuns.
+        </p>
+
+        <p>
+          Sua atmosfera é composta por hidrogênio, hélio e metano, sendo este último responsável por sua coloração
+          azul-esverdeada característica.
+        </p>
+
+        <h3>Um eixo fora do padrão</h3>
+
+        <p>
+          A inclinação de Urano sugere que o planeta pode ter sofrido uma colisão massiva no passado, alterando
+          completamente sua rotação.
+        </p>
+
+        <figure class="imagem-planeta">
+          <img src="../imagens/eixourano.jpg">
+          <figcaption>Coloração causada pela presença de metano</figcaption>
+        </figure>
+      </section>
+
+      <section>
+        <h2>🌌 Estrutura e Dinâmica</h2>
+
+        <p>
+          Urano possui uma estrutura composta por gases e elementos gelados, sendo classificado como um gigante de gelo.
+          Seu interior apresenta temperaturas extremamente baixas.
+        </p>
+
+        <p>
+          O planeta também possui anéis e diversas luas, embora menos visíveis do que os de Saturno.
+        </p>
+
+        <h3>Frio e estabilidade aparente</h3>
+
+        <p>
+          Apesar de sua aparência calma, Urano apresenta dinâmicas internas complexas que ainda são objeto de estudo.
+        </p>
+
+        <figure class="imagem-planeta">
+          <img src="../imagens/uranocomposicao.jpg">
+          <figcaption>Estrutura interna e sistema de anéis discretos</figcaption>
+        </figure>
+      </section>
+
+    </main>
+  </div>
+  <script>
+  const header = document.querySelector(".header");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 50) {
+      header.classList.add("sumir");
+    } else {
+      header.classList.remove("sumir");
+    }
+  });
+</script>
 </body>
+
 </html>
