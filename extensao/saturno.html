@@ -46,19 +46,26 @@
       </ul>
 
       <hr class="divisor">
+      <div class="menu-planetas-container">
 
+        <button class="toggle-planetas">
+          🪐 Planetas
+        </button>
 
+        <ul class="menu-planetas">
+          <li><a href="mercurio.html"><img src="../imagens/mercurio.ico" width="20" height="20"> Mercúrio</a></li>
+          <li><a href="venus.html"><img src="../imagens/venus.ico" width="20" height="20"> Vênus</a></li>
+          <li><a href="terra.html"><img src="../imagens/terra.ico" width="20" height="20"> Terra</a></li>
+          <li><a href="marte.html"><img src="../imagens/marte.ico" width="20" height="20"> Marte</a></li>
+          <li><a href="jupiter.html"><img src="../imagens/jupiter.ico" width="20" height="20"> Júpiter</a></li>
+          <li><a href="saturno.html"><img src="../imagens/saturno.ico" width="20" height="20"> Saturno</a></li>
+          <li><a href="urano.html"><img src="../imagens/urano.ico" width="20" height="20"> Urano</a></li>
+          <li><a href="netuno.html"><img src="../imagens/netuno.ico" width="20" height="20"> Netuno</a></li>
+          <li><a href="plutao.html"><img src="../imagens/plutao.ico" width="20" height="20" alt="">Plutão</a></li>
+        </ul>
 
-      <ul class="menu-planetas">
-        <li><a href="mercurio.html"><img src="../imagens/mercurio.ico"> Mercúrio</a></li>
-        <li><a href="venus.html"><img src="../imagens/venus.ico"> Vênus</a></li>
-        <li><a href="marte.html"><img src="../imagens/marte.ico"> Marte</a></li>
-        <li><a href="jupiter.html"><img src="../imagens/jupiter.ico"> Júpiter</a></li>
-        <li><a href="terra.html"><img src="../imagens/terra.ico"> Terra</a></li>
-        <li><a href="urano.html"><img src="../imagens/urano.ico"> Urano</a></li>
-        <li><a href="netuno.html"><img src="../imagens/netuno.ico"> Netuno</a></li>
-        <li><a href="plutao.html"><img src="../imagens/plutao.ico"> Plutão</a></li>
-      </ul>
+      </div>
+
     </aside>
     <main class="content">
 
@@ -116,6 +123,8 @@
 
     </main>
   </div>
+ <button id="btn-topo">↑</button>
+
   <script>
     const header = document.querySelector(".header");
 
@@ -126,7 +135,30 @@
         header.classList.remove("sumir");
       }
     });
+    const btnPlanetas = document.querySelector(".toggle-planetas");
+    const listaPlanetas = document.querySelector(".menu-planetas");
+
+    btnPlanetas.addEventListener("click", () => {
+      listaPlanetas.classList.toggle("ativo");
+    });
+    const btnTopo = document.getElementById("btn-topo");
+
+// aparece quando desce
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+    btnTopo.style.display = "block";
+  } else {
+    btnTopo.style.display = "none";
+  }
+});
+
+// volta pro topo suave
+btnTopo.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+  });
   </script>
 </body>
-
 </html>

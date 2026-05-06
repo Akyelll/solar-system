@@ -87,10 +87,14 @@ body {
 .sidebar {
   width: 220px;
   background-color: #2f2f2f;
-  min-height: 100vh;
+  height: 100vh;
+  overflow-y: auto;
   padding-top: 20px;
   position: sticky;
   top: 0;
+
+  scrollbar-width: thin;
+  scrollbar-color: #000000 #2f2f2f;
 }
 
 .sidebar ul {
@@ -103,7 +107,7 @@ body {
 }
 
 .sidebar a {
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
   display: block;
   padding: 10px 15px;
@@ -111,7 +115,7 @@ body {
 }
 
 .sidebar a:hover {
-  background-color: #444;
+  background-color: #5d5d5d;
 }
 
 /* Conteúdo */
@@ -151,34 +155,55 @@ h2, h3 {
 p {
   margin-bottom: 15px;
 }
-.footer {
-  background-color: #2f2f2f;
-  color: #fff;
-  text-align: center;
-  padding: 15px 10px;
-  margin-top: 0px;
-  font-size: 14px;
-}
+
 
 /* ICONES */ 
+/* botão */
+.toggle-planetas {
+  width: 100%;
+  background: none;
+  border: none;
+  color: rgb(255, 255, 255);
+  text-align: left;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
 
+.toggle-planetas:hover {
+  background:#5d5d5d;
+}
+
+/* lista escondida */
+.menu-planetas {
+  list-style: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+/* quando abre */
+.menu-planetas.ativo {
+  max-height: 500px; /* suficiente pra caber tudo */
+}
+
+/* itens */
 .menu-planetas a {
   display: flex;
   align-items: center;
-  gap: 10px;
-  color: #ccc;
-  font-size: 14px;
+  gap: 8px;
+  padding: 8px 10px;
+  color: rgb(253, 253, 253);
   text-decoration: none;
-  padding: 8px 15px;
-  transition: 0.2s;
-}
-
-.menu-planetas img {
-  width: 18px;
-  height: 18px;
 }
 
 .menu-planetas a:hover {
-  background-color: #444;
-  color: #fff;
+  background: #5d5d5d;
+
+}
+.menu-planetas img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  flex-shrink: 0;
 }

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore as grandes estruturas do universo, como nebulosas, galáxias e aglomerados.">
+  <title>Estruturas do Universo | Projeto Solar System</title>
+
+  <!-- Ícone -->
+  <link rel="shortcut icon" href="../imagens/iconeuniverso.ico">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/menu.css">
+  <link rel="stylesheet" href="../css/curiosidades.css">
+  <link rel="stylesheet" href="../css/planetas.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="header">
+    <nav class="navbar">
+
+
+
+      <div class="brand">
+        <img src="../imagens/logo.ico" alt="Logo do projeto" width="40" height="40">
+        <span class="brand-name">PSS Project Solar System</span>
+      </div>
+
+      <ul class="menu">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../planetas.html">Planetas</a></li>
+        <li><a href="../curiosidades/extremos.html">Curiosidades</a></li>
+        <li><a href="../projeto.html">Projeto</a></li>
+      </ul>
+
+    </nav>
+
+
+  </header>
+
+  <!-- IMAGEM DE TOPO -->
+  <div class="imagem-home">
+    <img src="../imagens/pilar.webp" alt="Estruturas do universo" width="2560" height="1440">
+    <h1>Estruturas do Universo</h1>
+  </div>
+
+  <div class="layout">
+
+    <aside class="sidebar" id="sidebar">
+      <ul>
+        <li><a href="../curiosidades/extremos.html">Objetos extremos</a></li>
+        <li><a href="../curiosidades/estrelas.html">Tipos de estrelas</a></li>
+        <li><a href="../curiosidades/estroturas.html">Estruturas do universo</a></li>
+        <li><a href="../curiosidades/misterios.html">Mistérios do universo</a></li>
+      </ul>
+    </aside>
+
+    <main class="content">
+
+      <section class="titulo-planeta">
+        <h2>A escala do cosmos</h2>
+        <p>
+          O universo é organizado em estruturas gigantescas que vão muito além de planetas e estrelas.
+          Essas formações revelam a dimensão real do cosmos e como a matéria se distribui em larga escala.
+        </p>
+      </section>
+
+      <section class="cards-container">
+
+        <!-- Nebulosa -->
+        <div class="card-planeta">
+          <div class="col-foto">
+            <img src="../imagens/nebulosa.webp" alt="Nebulosa" loading="lazy" width="120" height="120">
+            <span class="nome">Nebulosa</span>
+          </div>
+          <div class="col-dados">
+            <div class="item">Tipo: Nuvem de gás e poeira</div>
+            <div class="item">Função: Formação de estrelas</div>
+            <div class="item">Composição: Hidrogênio predominante</div>
+            <div class="item">Curiosidade: Berço de sistemas estelares</div>
+          </div>
+        </div>
+
+        <!-- Galáxia -->
+        <div class="card-planeta">
+          <div class="col-foto">
+            <img src="../imagens/galaxia.webp" alt="Galáxia" loading="lazy" width="120" height="120">
+            <span class="nome">Galáxia</span>
+          </div>
+          <div class="col-dados">
+            <div class="item">Escala: Bilhões de estrelas</div>
+            <div class="item">Formato: Espiral, elíptica ou irregular</div>
+            <div class="item">Centro: Buraco negro supermassivo</div>
+            <div class="item">Curiosidade: Vivemos na Via Láctea</div>
+          </div>
+        </div>
+
+        <!-- Quasar -->
+        <div class="card-planeta">
+          <div class="col-foto">
+            <img src="../imagens/quasar.webp" alt="Quasar" loading="lazy" width="120" height="120">
+            <span class="nome">Quasar</span>
+          </div>
+          <div class="col-dados">
+            <div class="item">Energia: Extremamente alta</div>
+            <div class="item">Origem: Buraco negro ativo</div>
+            <div class="item">Distância: Muito distante</div>
+            <div class="item">Curiosidade: Um dos objetos mais brilhantes do universo</div>
+          </div>
+        </div>
+
+        <!-- Aglomerado de Galáxias -->
+        <div class="card-planeta">
+          <div class="col-foto">
+            <img src="../imagens/aglomerado.webp" alt="Aglomerado de galáxias" loading="lazy" width="120" height="120">
+            <span class="nome">Aglomerado</span>
+          </div>
+          <div class="col-dados">
+            <div class="item">Tipo: Grupo de galáxias</div>
+            <div class="item">Escala: Enorme</div>
+            <div class="item">Gravidade: Compartilhada</div>
+            <div class="item">Curiosidade: Estruturas maiores que galáxias isoladas</div>
+          </div>
+        </div>
+
+      </section>
+
+    </main>
+  </div>
+  <button id="btn-topo">↑</button>
+
+  <footer class="footer">
+    <p class="footer-copy">
+      © 2026 Felipe Hellmann
+    </p>
+
+    <div class="footer-links">
+      <a href="https://github.com/Akyelll" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/seuusuario" target="_blank">LinkedIn</a>
+      <a href="https://akyelll.github.io/portfolio/" target="_blank">Portfólio</a>
+    </div>
+  </footer>
+  <script>
+    const header = document.querySelector(".header");
+    const btnTopo = document.getElementById("btn-topo");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 50) {
+        header.classList.add("sumir");
+      } else {
+        header.classList.remove("sumir");
+      }
+    });
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        btnTopo.style.display = "block";
+      } else {
+        btnTopo.style.display = "none";
+      }
+    });
+
+    btnTopo.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Explore os maiores mistérios do universo, como matéria escura, energia escura e o multiverso.">
+  <title>Mistérios do Universo | Projeto Solar System</title>
+
+  <!-- Ícone -->
+  <link rel="shortcut icon" href="../imagens/iconemisterio.ico">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/menu.css">
+  <link rel="stylesheet" href="../css/curiosidades.css">
+  <link rel="stylesheet" href="../css/planetas.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="header">
+    <nav class="navbar">
+
+      <div class="brand">
+        <img src="../imagens/logo.ico" alt="Logo do projeto" width="40" height="40">
+        <span class="brand-name">PSS Project Solar System</span>
+      </div>
+
+      <ul class="menu">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../planetas.html">Planetas</a></li>
+        <li><a href="../curiosidades/extremos.html">Curiosidades</a></li>
+        <li><a href="../projeto.html">Projeto</a></li>
+      </ul>
+
+    </nav>
+  </header>
+
+  <!-- IMAGEM DE TOPO -->
+  <div class="imagem-home">
+    <img src="../imagens/capa2.webp" alt="Mistérios do universo" width="2560" height="1440">
+    <h1>Mistérios do Universo</h1>
+  </div>
+
+  <div class="layout">
+
+    <aside class="sidebar">
+      <ul>
+        <li><a href="../curiosidades/extremos.html">Objetos extremos</a></li>
+        <li><a href="../curiosidades/estrelas.html">Tipos de estrelas</a></li>
+        <li><a href="../curiosidades/estroturas.html">Estruturas do universo</a></li>
+        <li><a href="../curiosidades/misterios.html">Mistérios do universo</a></li>
+      </ul>
+    </aside>
+
+    <main class="content">
+
+      <section class="titulo-planeta">
+        <h2>O que ainda não entendemos</h2>
+        <p>
+          Mesmo com avanços científicos, grande parte do universo ainda permanece desconhecida.
+          Essas teorias representam os limites do conhecimento atual e abrem espaço para novas descobertas.
+        </p>
+      </section>
+
+      <section class="cards-container">
+
+        <!-- Matéria Escura -->
+        <div class="card-planeta">
+          <div class="col-foto">
+            <img src="../imagens/materia-escura.webp" alt="Matéria escura" loading="lazy" width="120" height="120">
+            <span class="nome">Matéria Escura</span>
+          </div>
+          <div class="col-dados">
+            <div class="item">Natureza: Desconhecida</div>
+            <div class="item">Interação: Gravitacional</div>
+            <div class="item">Visível: Não</div>
+            <div class="item">Curiosidade: Compõe grande parte do universo</div>
+          </div>
+        </div>
+
+        <!-- Energia Escura -->
+        <div class="card-planeta">
+          <div class="col-foto">
+            <img src="../imagens/energia-escura.webp" alt="Energia escura" loading="lazy" width="120" height="120">
+            <span class="nome">Energia Escura</span>
+          </div>
+          <div class="col-dados">
+            <div class="item">Função: Expansão do universo</div>
+            <div class="item">Natureza: Desconhecida</div>
+            <div class="item">Escala: Universal</div>
+            <div class="item">Curiosidade: Acelera a expansão do cosmos</div>
+          </div>
+        </div>
+
+        <!-- Big Bang -->
+        <div class="card-planeta">
+          <div class="col-foto">
+            <img src="../imagens/bigbang.webp" alt="Big Bang" loading="lazy" width="120" height="120">
+            <span class="nome">Big Bang</span>
+          </div>
+          <div class="col-dados">
+            <div class="item">Origem: Universo</div>
+            <div class="item">Tempo: ~13,8 bilhões de anos</div>
+            <div class="item">Estado: Expansão contínua</div>
+            <div class="item">Curiosidade: Marca o início do espaço-tempo</div>
+          </div>
+        </div>
+
+        <!-- Multiverso -->
+        <div class="card-planeta">
+          <div class="col-foto">
+            <img src="../imagens/multiverso.webp" alt="Multiverso" loading="lazy" width="120" height="120">
+            <span class="nome">Multiverso</span>
+          </div>
+          <div class="col-dados">
+            <div class="item">Natureza: Hipótese</div>
+            <div class="item">Ideia: Múltiplos universos</div>
+            <div class="item">Comprovação: Nenhuma</div>
+            <div class="item">Curiosidade: Pode haver infinitas realidades</div>
+          </div>
+        </div>
+
+        <!-- Matéria Estranha -->
+        <div class="card-planeta">
+          <div class="col-foto">
+            <img src="../imagens/materia-estranha.webp" alt="Matéria estranha" loading="lazy" width="120" height="120">
+            <span class="nome">Matéria Estranha</span>
+          </div>
+          <div class="col-dados">
+            <div class="item">Tipo: Teórica</div>
+            <div class="item">Composição: Quarks</div>
+            <div class="item">Estabilidade: Incerta</div>
+            <div class="item">Curiosidade: Poderia alterar matéria comum</div>
+          </div>
+        </div>
+
+      </section>
+
+    </main>
+  </div>
+  <button id="btn-topo">↑</button>
+
+  <footer class="footer">
+    <p class="footer-copy">
+      © 2026 Felipe Hellmann
+    </p>
+
+    <div class="footer-links">
+      <a href="https://github.com/Akyelll" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/seuusuario" target="_blank">LinkedIn</a>
+      <a href="https://akyelll.github.io/portfolio/" target="_blank">Portfólio</a>
+    </div>
+  </footer>
+  <script>
+    const header = document.querySelector(".header");
+    const btnTopo = document.getElementById("btn-topo");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 50) {
+        header.classList.add("sumir");
+      } else {
+        header.classList.remove("sumir");
+      }
+    });
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        btnTopo.style.display = "block";
+      } else {
+        btnTopo.style.display = "none";
+      }
+    });
+
+    btnTopo.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+  </script>
+
+</body>
+
+</html>
