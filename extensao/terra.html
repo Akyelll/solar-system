@@ -1,21 +1,36 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8">
-  <title>Terra - PSS</title>
-  <link rel="shortcut icon" href="../imagens/terra.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>Terra - PSS</title>
+
+  <meta name="description"
+    content="Conheça a Terra, o único planeta conhecido capaz de sustentar vida complexa e contínua no Sistema Solar.">
+
+  <link rel="shortcut icon" href="../imagens/terra.ico" type="image/x-icon">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="../css/componentes.css">
   <link rel="stylesheet" href="../css/menu.css">
   <link rel="stylesheet" href="../css/planetas.css">
 </head>
 
 <body>
+
   <header class="header">
+
     <nav class="navbar">
+
       <div class="brand">
-        <img src="../imagens/logo.ico" alt="Logo">
+        <img
+          src="../imagens/logo.ico"
+          alt="Logo do projeto PSS Project Solar System"
+          width="40"
+          height="40">
+
         <span class="brand-name">PSS Project Solar System</span>
       </div>
 
@@ -23,21 +38,32 @@
         <li><a href="../index.html">Home</a></li>
         <li><a href="../planetas.html">Planetas</a></li>
         <li><a href="../curiosidades/extremos.html">Curiosidades</a></li>
-        <li><a href="../projeto.html">Projeto</a></li>
       </ul>
+
     </nav>
+
   </header>
 
   <div class="imagem-home">
-    <img src="../imagens/terra.webp" alt="Terra">
+
+    <img
+      src="../imagens/terra.webp"
+      alt="Imagem do planeta Terra vista do espaço"
+      loading="eager"
+      width="2000">
+
     <h1>TERRA</h1>
     <h2>"O Milagre Azul"</h2>
+
   </div>
+
   <div class="layout">
+
     <aside class="sidebar">
+
       <ul>
         <li><a href="#ambiente">🌡️ Ambiente</a></li>
-        <li><a href="#estrutura">🌍 Estrutura</a></li>
+        <li><a href="#transformacao">🌍 Transformação</a></li>
         <li><a href="#movimento">🔄 Movimento</a></li>
         <li><a href="#fenomenos">🌀 Fenômenos</a></li>
         <li><a href="#sistema">🛰️ Sistema</a></li>
@@ -45,138 +71,234 @@
       </ul>
 
       <hr class="divisor">
+
       <div class="menu-planetas-container">
 
-        <button class="toggle-planetas">
+        <button class="toggle-planetas" type="button">
           🪐 Planetas
         </button>
 
         <ul class="menu-planetas">
-          <li><a href="mercurio.html"><img src="../imagens/mercurio.ico" width="20" height="20"> Mercúrio</a></li>
-          <li><a href="venus.html"><img src="../imagens/venus.ico" width="20" height="20"> Vênus</a></li>
-          <li><a href="terra.html"><img src="../imagens/terra.ico" width="20" height="20"> Terra</a></li>
-          <li><a href="marte.html"><img src="../imagens/marte.ico" width="20" height="20"> Marte</a></li>
-          <li><a href="jupiter.html"><img src="../imagens/jupiter.ico" width="20" height="20"> Júpiter</a></li>
-          <li><a href="saturno.html"><img src="../imagens/saturno.ico" width="20" height="20"> Saturno</a></li>
-          <li><a href="urano.html"><img src="../imagens/urano.ico" width="20" height="20"> Urano</a></li>
-          <li><a href="netuno.html"><img src="../imagens/netuno.ico" width="20" height="20"> Netuno</a></li>
-          <li><a href="plutao.html"><img src="../imagens/plutao.ico" width="20" height="20" alt="">Plutão</a></li>
+
+          <li>
+            <a href="mercurio.html">
+              <img src="../imagens/mercurio.ico" alt="Ícone de Mercúrio" width="20" height="20">
+              Mercúrio
+            </a>
+          </li>
+
+          <li>
+            <a href="venus.html">
+              <img src="../imagens/venus.ico" alt="Ícone de Vênus" width="20" height="20">
+              Vênus
+            </a>
+          </li>
+
+          <li>
+            <a href="terra.html">
+              <img src="../imagens/terra.ico" alt="Ícone da Terra" width="20" height="20">
+              Terra
+            </a>
+          </li>
+
+          <li>
+            <a href="marte.html">
+              <img src="../imagens/marte.ico" alt="Ícone de Marte" width="20" height="20">
+              Marte
+            </a>
+          </li>
+
+          <li>
+            <a href="jupiter.html">
+              <img src="../imagens/jupiter.ico" alt="Ícone de Júpiter" width="20" height="20">
+              Júpiter
+            </a>
+          </li>
+
+          <li>
+            <a href="saturno.html">
+              <img src="../imagens/saturno.ico" alt="Ícone de Saturno" width="20" height="20">
+              Saturno
+            </a>
+          </li>
+
+          <li>
+            <a href="urano.html">
+              <img src="../imagens/urano.ico" alt="Ícone de Urano" width="20" height="20">
+              Urano
+            </a>
+          </li>
+
+          <li>
+            <a href="netuno.html">
+              <img src="../imagens/netuno.ico" alt="Ícone de Netuno" width="20" height="20">
+              Netuno
+            </a>
+          </li>
+
+          <li>
+            <a href="plutao.html">
+              <img src="../imagens/plutao.ico" alt="Ícone de Plutão" width="20" height="20">
+              Plutão
+            </a>
+          </li>
+
         </ul>
 
       </div>
 
     </aside>
-    </aside>
 
     <main class="content">
 
       <section id="ambiente">
+
         <h2>🌍 A Terra: O Equilíbrio Raro</h2>
 
         <p>
           A Terra é, até onde sabemos, o único planeta capaz de sustentar vida de forma complexa e contínua. Isso não
           acontece por acaso, mas por uma combinação extremamente específica de fatores. Sua distância em relação ao Sol
-          permite a existência de água em estado líquido — um dos elementos mais importantes para a vida. Além disso,
-          sua atmosfera rica em nitrogênio e oxigênio cria uma camada protetora que regula a temperatura e filtra
-          radiações perigosas.
+          permite a existência de água em estado líquido — um dos elementos mais importantes para a vida.
         </p>
 
         <p>
-          Outro ponto essencial é o campo magnético terrestre, que atua como um escudo invisível contra partículas
-          solares altamente energéticas. Sem ele, a atmosfera poderia ser lentamente destruída, como ocorreu em Marte. A
-          presença de placas tectônicas também desempenha um papel fundamental, reciclando nutrientes e mantendo o
-          equilíbrio climático ao longo de milhões de anos.
+          Além disso, sua atmosfera rica em nitrogênio e oxigênio cria uma camada protetora que regula a temperatura e
+          filtra radiações perigosas.
         </p>
 
         <h3>A Terra não é comum — ela é uma exceção</h3>
 
         <p>
-          Quando analisamos esses fatores em conjunto, fica claro que a Terra não é apenas habitável — ela é resultado
-          de um equilíbrio delicado, difícil de replicar. Isso levanta uma questão inevitável: quantos outros planetas
-          no universo conseguiram atingir esse mesmo nível de estabilidade?
+          Outro ponto essencial é o campo magnético terrestre, que atua como um escudo invisível contra partículas
+          solares altamente energéticas. Sem ele, a atmosfera poderia ser lentamente destruída, como ocorreu em Marte.
         </p>
 
+        <p>
+          Quando analisamos esses fatores em conjunto, fica claro que a Terra não é apenas habitável — ela é resultado
+          de um equilíbrio delicado, difícil de replicar.
+        </p>
 
         <figure class="imagem-planeta">
-          <img src="../imagens/vida-na-terra-capa.webp" alt="Vida na Terra">
-          <figcaption>"Vida"</figcaption>
+
+          <img
+            src="../imagens/vida-na-terra-capa.webp"
+            alt="Vida presente no planeta Terra"
+            loading="lazy"
+            width="900">
+
+          <figcaption>
+            Vida no planeta Terra
+          </figcaption>
+
         </figure>
+
       </section>
 
-
-      <section>
-
+      <section id="transformacao">
 
         <h2>🌱 Um Planeta Vivo em Constante Transformação</h2>
 
         <p>
           Diferente da maioria dos planetas do sistema solar, a Terra não é estática. Ela está em constante mudança,
-          tanto na superfície quanto em seu interior. Vulcões, terremotos e movimentos das placas tectônicas mostram que
-          o planeta ainda é geologicamente ativo. Esses processos, apesar de muitas vezes destrutivos, são essenciais
-          para a renovação da superfície e para a manutenção das condições que permitem a vida.
+          tanto na superfície quanto em seu interior.
         </p>
 
         <p>
-          Além disso, a Terra abriga uma biodiversidade extremamente complexa. Milhões de espécies interagem em sistemas
-          ecológicos interdependentes, criando um ambiente dinâmico e resiliente. Esse equilíbrio, no entanto, não é
-          garantido. Pequenas alterações podem gerar impactos significativos, o que torna a estabilidade do planeta algo
-          mais frágil do que parece.
+          Vulcões, terremotos e movimentos das placas tectônicas mostram que o planeta ainda é geologicamente ativo.
+          Esses processos, apesar de muitas vezes destrutivos, são essenciais para a renovação da superfície e para a
+          manutenção das condições que permitem a vida.
         </p>
 
         <h3>Um sistema em equilíbrio entre ordem e caos</h3>
 
         <p>
+          A Terra abriga uma biodiversidade extremamente complexa. Milhões de espécies interagem em sistemas ecológicos
+          interdependentes, criando um ambiente dinâmico e resiliente.
+        </p>
+
+        <p>
           Comparada a gigantes gasosos como Júpiter ou ambientes extremos como Vênus, a Terra se destaca não pela força
-          ou tamanho, mas pela sua capacidade de sustentar e adaptar a vida. Isso transforma o planeta em algo mais do
-          que um corpo celeste — ele é um sistema vivo, em equilíbrio contínuo entre ordem e caos.
+          ou tamanho, mas pela sua capacidade de sustentar e adaptar a vida.
         </p>
 
         <figure class="imagem-planeta">
-          <img src="../imagens/mudança.webp" alt="Transformações da Terra">
-          <figcaption>"Transformações do planeta ao longo do tempo"</figcaption>
+
+          <img
+            src="../imagens/mudança.webp"
+            alt="Transformações naturais do planeta Terra ao longo do tempo"
+            loading="lazy"
+            width="900">
+
+          <figcaption>
+            Transformações do planeta ao longo do tempo
+          </figcaption>
+
         </figure>
 
       </section>
 
     </main>
+
   </div>
- <button id="btn-topo">↑</button>
+
+  <button id="btn-topo" aria-label="Voltar ao topo">
+    ↑
+  </button>
+
+  <footer class="footer">
+
+    <p class="footer-copy">
+      © 2026 Felipe Hellmann
+    </p>
+
+    <div class="footer-links">
+
+      <a href="https://github.com/Akyelll" target="_blank" rel="noopener noreferrer">
+        GitHub
+      </a>
+
+      <a href="https://linkedin.com/in/seuusuario" target="_blank" rel="noopener noreferrer">
+        LinkedIn
+      </a>
+
+      <a href="https://akyelll.github.io/portfolio/" target="_blank" rel="noopener noreferrer">
+        Portfólio
+      </a>
+
+    </div>
+
+  </footer>
 
   <script>
     const header = document.querySelector(".header");
-
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 50) {
-        header.classList.add("sumir");
-      } else {
-        header.classList.remove("sumir");
-      }
-    });
+    const btnTopo = document.getElementById("btn-topo");
     const btnPlanetas = document.querySelector(".toggle-planetas");
     const listaPlanetas = document.querySelector(".menu-planetas");
 
+    // Oculta o header ao rolar
+    window.addEventListener("scroll", () => {
+      header.classList.toggle("sumir", window.scrollY > 50);
+    });
+
+    // Abre e fecha menu lateral
     btnPlanetas.addEventListener("click", () => {
       listaPlanetas.classList.toggle("ativo");
     });
-    const btnTopo = document.getElementById("btn-topo");
 
-// aparece quando desce
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 300) {
-    btnTopo.style.display = "block";
-  } else {
-    btnTopo.style.display = "none";
-  }
-});
+    // Mostrar botão de voltar ao topo
+    window.addEventListener("scroll", () => {
+      btnTopo.style.display = window.scrollY > 300 ? "block" : "none";
+    });
 
-// volta pro topo suave
-btnTopo.addEventListener("click", () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
-  });
+    // Rolagem suave até o topo
+    btnTopo.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
   </script>
+
 </body>
 
 </html>

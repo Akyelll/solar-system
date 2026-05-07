@@ -1,6 +1,7 @@
 /* ============================= */
 /* RESET BÁSICO */
 /* ============================= */
+
 body {
   margin: 0;
   padding: 0;
@@ -15,50 +16,53 @@ body {
 /* ============================= */
 
 /*
-Esse é o container geral:
-- sidebar (esquerda)
-- conteúdo (direita)
+Estrutura geral:
+- sidebar (fixa lateral)
+- content (área principal)
 */
 .layout {
   display: flex;
 }
-/* Grupo logo + nome */
+
+/* ============================= */
+/* BRAND (LOGO + NOME) */
+/* ============================= */
+
 .brand {
   display: flex;
   align-items: center;
   gap: 20px;
 }
 
-/* Logo */
 .brand img {
   width: 80px;
   height: auto;
 }
 
-/* Nome da marca */
 .brand-name {
-  color: rgb(255, 255, 255);
+  color: #fff;
   font-size: 1.2rem;
   font-weight: bold;
 }
 
 /* ============================= */
-/* SIDEBAR (já existente, mantida) */
+/* SIDEBAR */
 /* ============================= */
 
 .sidebar {
   width: 220px;
   background-color: #2f2f2f;
-  min-height: 100vh; /* ocupa a tela toda */
+  min-height: 100vh;
   padding-top: 20px;
 
-  position: sticky; /* fixa ao rolar */
+  position: sticky;
   top: 0;
 }
 
 .sidebar ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .sidebar li {
@@ -78,33 +82,21 @@ Esse é o container geral:
 }
 
 /* ============================= */
-/* CONTEÚDO (lado direito) */
+/* CONTEÚDO PRINCIPAL */
 /* ============================= */
 
-/*
-Essa área cresce e ocupa o resto da tela
-*/
 .content {
   flex: 1;
   padding: 40px;
 }
 
 /* ============================= */
-/* GRID DOS CARDS */
+/* CARDS CONTAINER */
 /* ============================= */
 
-/*
-Aqui está a mudança principal:
-ANTES: flex com 3 por linha
-AGORA: grid com 2 colunas
-*/
 .cards-container {
   display: grid;
-
-  /* 2 colunas iguais */
   grid-template-columns: repeat(2, 1fr);
-
-  /* espaçamento entre cards */
   gap: 30px;
 
   max-width: 1100px;
@@ -112,7 +104,7 @@ AGORA: grid com 2 colunas
 }
 
 /* ============================= */
-/* CARD */
+/* CARD PLANETA */
 /* ============================= */
 
 .card-planeta {
@@ -122,20 +114,19 @@ AGORA: grid com 2 colunas
   background-color: rgba(20, 20, 20, 0.9);
   border-radius: 10px;
 
-  padding: 25px; /* mais espaço interno */
+  padding: 25px;
   color: #f1f1f1;
 
-  transition: all 0.3s;
+  transition: all 0.3s ease;
 }
 
-/* efeito leve */
 .card-planeta:hover {
   background-color: rgba(255, 255, 255, 0.08);
   transform: translateY(-4px);
 }
 
 /* ============================= */
-/* FOTO */
+/* COLUNA FOTO */
 /* ============================= */
 
 .col-foto {
@@ -161,7 +152,7 @@ AGORA: grid com 2 colunas
 }
 
 /* ============================= */
-/* DADOS */
+/* COLUNA DADOS */
 /* ============================= */
 
 .col-dados {
@@ -179,34 +170,40 @@ AGORA: grid com 2 colunas
 }
 
 /* ============================= */
-/* RESPONSIVO */
+/* RESPONSIVO - ESTRATIFICADO */
 /* ============================= */
 
-/*
-Tablet → ainda 2 colunas
-*/
-@media (max-width: 900px) {
+/* ===================== */
+/* 1024px - NOTEBOOK */
+/* ===================== */
+@media (max-width: 1024px) {
+
   .cards-container {
-    grid-template-columns: 1fr; /* vira 1 coluna */
+    grid-template-columns: 1fr;
+  }
+
+  .content {
+    padding: 30px;
   }
 }
 
-/*
-Celular → ajusta tudo
-*/
-@media (max-width: 600px) {
+/* ===================== */
+/* 720px - TABLET */
+/* ===================== */
+@media (max-width: 720px) {
 
   .layout {
-    flex-direction: column; /* sidebar vai pra cima */
+    flex-direction: column;
   }
 
   .sidebar {
     width: 100%;
     position: relative;
+    min-height: auto;
   }
 
   .content {
-    padding: 20px;
+    padding: 25px;
   }
 
   .card-planeta {
@@ -218,5 +215,43 @@ Celular → ajusta tudo
   .col-foto {
     margin-right: 0;
     margin-bottom: 15px;
+  }
+}
+
+/* ===================== */
+/* 480px - CELULAR */
+/* ===================== */
+@media (max-width: 480px) {
+
+  .brand {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .brand img {
+    width: 60px;
+  }
+
+  .brand-name {
+    font-size: 1rem;
+  }
+
+  .content {
+    padding: 15px;
+  }
+
+  .col-foto img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .col-dados .item {
+    font-size: 0.85rem;
+    padding: 10px;
+  }
+
+  .card-planeta {
+    padding: 18px;
   }
 }

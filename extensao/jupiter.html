@@ -1,106 +1,208 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Júpiter - PSS</title>
+
+  <meta name="description"
+    content="Explore Júpiter, o maior planeta do Sistema Solar, suas tempestades gigantes, luas e estrutura gasosa.">
+
+  <title>Júpiter | Projeto Solar System</title>
+
+  <!-- Ícone -->
   <link rel="shortcut icon" href="../imagens/jupiter.ico" type="image/x-icon">
 
+  <!-- CSS -->
   <link rel="stylesheet" href="../css/componentes.css">
   <link rel="stylesheet" href="../css/menu.css">
   <link rel="stylesheet" href="../css/planetas.css">
+
 </head>
 
 <body>
+
+  <!-- HEADER -->
   <header class="header">
+
     <nav class="navbar">
+
       <div class="brand">
-        <img src="../imagens/logo.ico" alt="Logo">
+
+        <img src="../imagens/logo.ico" alt="Logo do Projeto Solar System" width="40" height="40">
+
         <span class="brand-name">PSS Project Solar System</span>
+
       </div>
 
       <ul class="menu">
+
         <li><a href="../index.html">Home</a></li>
         <li><a href="../planetas.html">Planetas</a></li>
         <li><a href="../curiosidades/extremos.html">Curiosidades</a></li>
-        <li><a href="../projeto.html">Projeto</a></li>
+
       </ul>
+
     </nav>
+
   </header>
 
+  <!-- CAPA -->
   <div class="imagem-home">
-    <img src="../imagens/jupiter.webp" alt="Júpiter">
-    <h1>JÚPITER</h1>
-    <h2>"O Gigante Implacável"</h2>
+
+    <img src="../imagens/jupiter.webp" alt="Planeta Júpiter" width="2000" height="2000">
+
+    <h1>Júpiter</h1>
+    <h2>“O Gigante Implacável”</h2>
+
   </div>
+
+  <!-- LAYOUT -->
   <div class="layout">
+
+    <!-- SIDEBAR -->
     <aside class="sidebar">
+
       <ul>
+
         <li><a href="#ambiente">🌡️ Ambiente</a></li>
         <li><a href="#estrutura">🌍 Estrutura</a></li>
         <li><a href="#movimento">🔄 Movimento</a></li>
         <li><a href="#fenomenos">🌀 Fenômenos</a></li>
         <li><a href="#sistema">🛰️ Sistema</a></li>
         <li><a href="#exploracao">🚀 Exploração</a></li>
+
       </ul>
 
       <hr class="divisor">
 
+      <!-- MENU PLANETAS -->
       <div class="menu-planetas-container">
 
-<button class="toggle-planetas">
-  🪐 Planetas
-</button>
+        <button class="toggle-planetas" aria-label="Abrir menu de planetas">
 
-<ul class="menu-planetas">
-  <li><a href="mercurio.html"><img src="../imagens/mercurio.ico" width="20" height="20"> Mercúrio</a></li>
-  <li><a href="venus.html"><img src="../imagens/venus.ico" width="20" height="20"> Vênus</a></li>
-  <li><a href="terra.html"><img src="../imagens/terra.ico" width="20" height="20"> Terra</a></li>
-  <li><a href="marte.html"><img src="../imagens/marte.ico" width="20" height="20"> Marte</a></li>
-  <li><a href="jupiter.html"><img src="../imagens/jupiter.ico" width="20" height="20"> Júpiter</a></li>
-  <li><a href="saturno.html"><img src="../imagens/saturno.ico" width="20" height="20"> Saturno</a></li>
-  <li><a href="urano.html"><img src="../imagens/urano.ico" width="20" height="20"> Urano</a></li>
-  <li><a href="netuno.html"><img src="../imagens/netuno.ico" width="20" height="20"> Netuno</a></li>
-  <li><a href="plutao.html"><img src="../imagens/plutao.ico" width="20" height="20" alt="">Plutão</a></li>
-</ul>
+          🪐 Planetas
+
+        </button>
+
+        <ul class="menu-planetas">
+
+          <li>
+            <a href="mercurio.html">
+              <img src="../imagens/mercurio.ico" alt="Mercúrio" width="20" height="20">
+              Mercúrio
+            </a>
+          </li>
+
+          <li>
+            <a href="venus.html">
+              <img src="../imagens/venus.ico" alt="Vênus" width="20" height="20">
+              Vênus
+            </a>
+          </li>
+
+          <li>
+            <a href="terra.html">
+              <img src="../imagens/terra.ico" alt="Terra" width="20" height="20">
+              Terra
+            </a>
+          </li>
+
+          <li>
+            <a href="marte.html">
+              <img src="../imagens/marte.ico" alt="Marte" width="20" height="20">
+              Marte
+            </a>
+          </li>
+
+          <li>
+            <a href="jupiter.html">
+              <img src="../imagens/jupiter.ico" alt="Júpiter" width="20" height="20">
+              Júpiter
+            </a>
+          </li>
+
+          <li>
+            <a href="saturno.html">
+              <img src="../imagens/saturno.ico" alt="Saturno" width="20" height="20">
+              Saturno
+            </a>
+          </li>
+
+          <li>
+            <a href="urano.html">
+              <img src="../imagens/urano.ico" alt="Urano" width="20" height="20">
+              Urano
+            </a>
+          </li>
+
+          <li>
+            <a href="netuno.html">
+              <img src="../imagens/netuno.ico" alt="Netuno" width="20" height="20">
+              Netuno
+            </a>
+          </li>
+
+          <li>
+            <a href="plutao.html">
+              <img src="../imagens/plutao.ico" alt="Plutão" width="20" height="20">
+              Plutão
+            </a>
+          </li>
+
+        </ul>
 
       </div>
 
     </aside>
+
+    <!-- CONTEÚDO -->
     <main class="content">
 
+      <!-- AMBIENTE -->
       <section id="ambiente">
+
         <h2>🟠 Júpiter: O Gigante Gasoso</h2>
 
         <p>
-          Júpiter é o maior planeta do sistema solar e é composto principalmente por hidrogênio e hélio. Sua atmosfera é
-          extremamente dinâmica, marcada por tempestades intensas e faixas de nuvens em constante movimento.
+          Júpiter é o maior planeta do Sistema Solar e é composto principalmente por hidrogênio e hélio.
+          Sua atmosfera é extremamente dinâmica, marcada por tempestades intensas e faixas de nuvens em constante
+          movimento.
         </p>
 
         <p>
-          A Grande Mancha Vermelha, uma tempestade gigantesca, está ativa há séculos e exemplifica a força dos fenômenos
-          presentes no planeta.
+          A Grande Mancha Vermelha, uma tempestade gigantesca,
+          está ativa há séculos e exemplifica a força dos fenômenos presentes no planeta.
         </p>
 
         <h3>Força em escala colossal</h3>
 
         <p>
-          Seu tamanho e massa exercem forte influência gravitacional, impactando outros corpos do sistema solar.
+          Seu tamanho e massa exercem forte influência gravitacional,
+          impactando outros corpos do Sistema Solar.
         </p>
 
         <figure class="imagem-planeta">
-          <img src="../imagens/jupiterbase.webp">
-          <figcaption>Tempestades massivas e atmosfera turbulenta</figcaption>
+
+          <img src="../imagens/jupiterbase.webp" alt="Atmosfera turbulenta de Júpiter" loading="lazy">
+
+          <figcaption>
+            Tempestades massivas e atmosfera turbulenta
+          </figcaption>
+
         </figure>
+
       </section>
 
-      <section>
+      <!-- ESTRUTURA -->
+      <section id="estrutura">
+
         <h2>🌪️ Estrutura e Influência</h2>
 
         <p>
-          Júpiter não possui uma superfície sólida definida, sendo composto por camadas de gás que se tornam cada vez
-          mais densas em direção ao núcleo.
+          Júpiter não possui uma superfície sólida definida,
+          sendo composto por camadas de gás que se tornam cada vez mais densas em direção ao núcleo.
         </p>
 
         <p>
@@ -110,53 +212,104 @@
         <h3>O guardião gravitacional</h3>
 
         <p>
-          Sua presença ajuda a desviar asteroides, atuando como uma espécie de escudo para planetas internos.
+          Sua presença ajuda a desviar asteroides,
+          atuando como uma espécie de escudo para os planetas internos.
         </p>
 
         <figure class="imagem-planeta">
-          <img src="../imagens/mancha.webp">
-          <figcaption>Influência gravitacional no sistema solar</figcaption>
+
+          <img src="../imagens/mancha.webp" alt="Grande Mancha Vermelha de Júpiter" loading="lazy">
+
+          <figcaption>
+            Influência gravitacional no Sistema Solar
+          </figcaption>
+
         </figure>
+
       </section>
 
     </main>
-  </div>
- <button id="btn-topo">↑</button>
 
+  </div>
+
+  <!-- BOTÃO TOPO -->
+  <button id="btn-topo" aria-label="Voltar ao topo">
+
+    ↑
+
+  </button>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <p class="footer-copy">
+      © 2026 Felipe Hellmann
+    </p>
+
+    <div class="footer-links">
+
+      <a href="https://github.com/Akyelll" target="_blank">
+
+        GitHub
+
+      </a>
+
+      <a href="https://linkedin.com/in/seuusuario" target="_blank">
+
+        LinkedIn
+
+      </a>
+
+      <a href="https://akyelll.github.io/portfolio/" target="_blank">
+
+        Portfólio
+
+      </a>
+
+    </div>
+
+  </footer>
+
+  <!-- SCRIPT -->
   <script>
+
     const header = document.querySelector(".header");
+    const btnTopo = document.getElementById("btn-topo");
+
+    const btnPlanetas = document.querySelector(".toggle-planetas");
+    const listaPlanetas = document.querySelector(".menu-planetas");
 
     window.addEventListener("scroll", () => {
+
       if (window.scrollY > 50) {
         header.classList.add("sumir");
       } else {
         header.classList.remove("sumir");
       }
+
+      if (window.scrollY > 300) {
+        btnTopo.style.display = "block";
+      } else {
+        btnTopo.style.display = "none";
+      }
+
     });
-    const btnPlanetas = document.querySelector(".toggle-planetas");
-    const listaPlanetas = document.querySelector(".menu-planetas");
 
     btnPlanetas.addEventListener("click", () => {
+
       listaPlanetas.classList.toggle("ativo");
+
     });
-    const btnTopo = document.getElementById("btn-topo");
 
-// aparece quando desce
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 300) {
-    btnTopo.style.display = "block";
-  } else {
-    btnTopo.style.display = "none";
-  }
-});
+    btnTopo.addEventListener("click", () => {
 
-// volta pro topo suave
-btnTopo.addEventListener("click", () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
-  });
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+
+    });
+
   </script>
 
 </body>

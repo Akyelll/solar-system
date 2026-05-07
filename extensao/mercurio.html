@@ -1,178 +1,328 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mercurio - PSS</title>
+
+  <meta name="description"
+    content="Explore Mercúrio, o planeta mais próximo do Sol, seus extremos térmicos, estrutura rochosa e dinâmica orbital.">
+
+  <title>Mercúrio | Projeto Solar System</title>
+
+  <!-- Ícone -->
   <link rel="shortcut icon" href="../imagens/mercurio.ico" type="image/x-icon">
 
-
+  <!-- CSS -->
   <link rel="stylesheet" href="../css/componentes.css">
   <link rel="stylesheet" href="../css/menu.css">
   <link rel="stylesheet" href="../css/planetas.css">
 
-
-
-
 </head>
 
 <body>
+
+  <!-- HEADER -->
   <header class="header">
+
     <nav class="navbar">
 
       <div class="brand">
-        <img src="../imagens/logo.ico" alt="Logo">
-        <span class="brand-name">PSS Project Solar System</span>
+
+        <img src="../imagens/logo.ico" alt="Logo do Projeto Solar System" width="40" height="40">
+
+        <span class="brand-name">
+          PSS Project Solar System
+        </span>
+
       </div>
 
       <ul class="menu">
+
         <li><a href="../index.html">Home</a></li>
         <li><a href="../planetas.html">Planetas</a></li>
         <li><a href="../curiosidades/extremos.html">Curiosidades</a></li>
-        <li><a href="/projeto.html">Projeto</a></li>
+
       </ul>
 
     </nav>
 
-
   </header>
 
+  <!-- CAPA -->
   <div class="imagem-home">
-    <img src="../imagens/mercurio-tema.webp" alt="">
-    <h1>MERCURIO</h1>
-    <h2> "O Mundo dos Extremos" </h2>
+
+    <img src="../imagens/mercurio-tema.webp" alt="Planeta Mercúrio próximo ao Sol" width="2000">
+
+    <h1>Mercúrio</h1>
+    <h2>“O Mundo dos Extremos”</h2>
+
   </div>
+
+  <!-- LAYOUT -->
   <div class="layout">
+
+    <!-- SIDEBAR -->
     <aside class="sidebar">
+
       <ul>
+
         <li><a href="#ambiente">🌡️ Ambiente</a></li>
         <li><a href="#estrutura">🌍 Estrutura</a></li>
         <li><a href="#movimento">🔄 Movimento</a></li>
         <li><a href="#fenomenos">🌀 Fenômenos</a></li>
         <li><a href="#sistema">🛰️ Sistema</a></li>
         <li><a href="#exploracao">🚀 Exploração</a></li>
+
       </ul>
 
       <hr class="divisor">
-<div class="menu-planetas-container">
 
-<button class="toggle-planetas">
-  🪐 Planetas
-</button>
+      <!-- MENU PLANETAS -->
+      <div class="menu-planetas-container">
 
-<ul class="menu-planetas">
-  <li><a href="mercurio.html"><img src="../imagens/mercurio.ico" width="20" height="20"> Mercúrio</a></li>
-  <li><a href="venus.html"><img src="../imagens/venus.ico" width="20" height="20"> Vênus</a></li>
-  <li><a href="terra.html"><img src="../imagens/terra.ico" width="20" height="20"> Terra</a></li>
-  <li><a href="marte.html"><img src="../imagens/marte.ico" width="20" height="20"> Marte</a></li>
-  <li><a href="jupiter.html"><img src="../imagens/jupiter.ico" width="20" height="20"> Júpiter</a></li>
-  <li><a href="saturno.html"><img src="../imagens/saturno.ico" width="20" height="20"> Saturno</a></li>
-  <li><a href="urano.html"><img src="../imagens/urano.ico" width="20" height="20"> Urano</a></li>
-  <li><a href="netuno.html"><img src="../imagens/netuno.ico" width="20" height="20"> Netuno</a></li>
-  <li><a href="plutao.html"><img src="../imagens/plutao.ico" width="20" height="20" alt="">Plutão</a></li>
-</ul>
+        <button class="toggle-planetas" aria-label="Abrir menu de planetas">
+
+          🪐 Planetas
+
+        </button>
+
+        <ul class="menu-planetas">
+
+          <li>
+            <a href="mercurio.html">
+              <img src="../imagens/mercurio.ico" alt="Mercúrio" width="20" height="20">
+              Mercúrio
+            </a>
+          </li>
+
+          <li>
+            <a href="venus.html">
+              <img src="../imagens/venus.ico" alt="Vênus" width="20" height="20">
+              Vênus
+            </a>
+          </li>
+
+          <li>
+            <a href="terra.html">
+              <img src="../imagens/terra.ico" alt="Terra" width="20" height="20">
+              Terra
+            </a>
+          </li>
+
+          <li>
+            <a href="marte.html">
+              <img src="../imagens/marte.ico" alt="Marte" width="20" height="20">
+              Marte
+            </a>
+          </li>
+
+          <li>
+            <a href="jupiter.html">
+              <img src="../imagens/jupiter.ico" alt="Júpiter" width="20" height="20">
+              Júpiter
+            </a>
+          </li>
+
+          <li>
+            <a href="saturno.html">
+              <img src="../imagens/saturno.ico" alt="Saturno" width="20" height="20">
+              Saturno
+            </a>
+          </li>
+
+          <li>
+            <a href="urano.html">
+              <img src="../imagens/urano.ico" alt="Urano" width="20" height="20">
+              Urano
+            </a>
+          </li>
+
+          <li>
+            <a href="netuno.html">
+              <img src="../imagens/netuno.ico" alt="Netuno" width="20" height="20">
+              Netuno
+            </a>
+          </li>
+
+          <li>
+            <a href="plutao.html">
+              <img src="../imagens/plutao.ico" alt="Plutão" width="20" height="20">
+              Plutão
+            </a>
+          </li>
+
+        </ul>
 
       </div>
 
     </aside>
-    </aside>
 
+    <!-- CONTEÚDO -->
     <main class="content">
 
+      <!-- AMBIENTE -->
       <section id="ambiente">
+
         <h2>☀️ Mercúrio: O Mundo dos Extremos</h2>
 
         <p>
-          Mercúrio é o planeta mais próximo do Sol e apresenta um dos ambientes mais extremos do sistema solar. Sem uma
-          atmosfera significativa, ele não consegue reter calor, o que resulta em variações térmicas intensas entre o
-          dia e a noite.
+          Mercúrio é o planeta mais próximo do Sol e apresenta um dos ambientes mais extremos do Sistema Solar.
+          Sem uma atmosfera significativa, ele não consegue reter calor,
+          o que resulta em variações térmicas intensas entre o dia e a noite.
         </p>
 
         <p>
-          Durante o dia, sua superfície pode ultrapassar 400°C, enquanto à noite despenca para temperaturas negativas
-          severas. Essa ausência de equilíbrio torna o planeta um exemplo claro de como a proximidade com o Sol não
-          garante estabilidade.
+          Durante o dia, sua superfície pode ultrapassar 400°C,
+          enquanto à noite despenca para temperaturas negativas severas.
+          Essa ausência de equilíbrio torna o planeta um exemplo claro de como a proximidade com o Sol não garante
+          estabilidade.
         </p>
 
         <h3>Um planeta sem proteção natural</h3>
 
         <p>
-          Sem uma camada atmosférica eficiente ou um campo magnético robusto, Mercúrio fica exposto diretamente à
-          radiação solar, o que contribui para um ambiente altamente hostil e inóspito.
+          Sem uma camada atmosférica eficiente ou um campo magnético robusto,
+          Mercúrio fica exposto diretamente à radiação solar,
+          o que contribui para um ambiente altamente hostil e inóspito.
         </p>
 
         <figure class="imagem-planeta">
-          <img src="../imagens/mercurio2.webp">
-          <figcaption>Superfície marcada por crateras e extremos térmicos</figcaption>
+
+          <img src="../imagens/mercurio2.webp" alt="Superfície craterada de Mercúrio" loading="lazy">
+
+          <figcaption>
+            Superfície marcada por crateras e extremos térmicos
+          </figcaption>
+
         </figure>
+
       </section>
 
-      <section>
+      <!-- ESTRUTURA -->
+      <section id="estrutura">
+
         <h2>🪐 Estrutura e Dinâmica</h2>
 
         <p>
-          Mercúrio é um planeta rochoso com uma superfície repleta de crateras, resultado de bilhões de anos de
-          impactos. Sua estrutura interna é dominada por um grande núcleo metálico, proporcionalmente maior do que o de
-          outros planetas.
+          Mercúrio é um planeta rochoso com uma superfície repleta de crateras,
+          resultado de bilhões de anos de impactos.
+          Sua estrutura interna é dominada por um grande núcleo metálico,
+          proporcionalmente maior do que o de outros planetas.
         </p>
 
         <p>
-          Seu movimento ao redor do Sol é rápido, completando uma órbita em apenas 88 dias terrestres, enquanto sua
-          rotação é lenta, criando dias longos e contrastantes.
+          Seu movimento ao redor do Sol é rápido,
+          completando uma órbita em apenas 88 dias terrestres,
+          enquanto sua rotação é lenta,
+          criando dias longos e contrastantes.
         </p>
 
         <h3>Velocidade e contraste</h3>
 
         <p>
-          Essa combinação de rotação lenta e translação rápida gera um dos ciclos mais incomuns do sistema solar,
+          Essa combinação de rotação lenta e translação rápida
+          gera um dos ciclos mais incomuns do Sistema Solar,
           reforçando o caráter extremo e singular do planeta.
         </p>
 
         <figure class="imagem-planeta">
-          <img src="../imagens/campo.webp">
-          <figcaption>Dinâmica orbital e características estruturais</figcaption>
+
+          <img src="../imagens/campo.webp" alt="Representação da dinâmica orbital de Mercúrio" loading="lazy">
+
+          <figcaption>
+            Dinâmica orbital e características estruturais
+          </figcaption>
+
         </figure>
+
       </section>
 
     </main>
-  </div>
- <button id="btn-topo">↑</button>
 
+  </div>
+
+  <!-- BOTÃO TOPO -->
+  <button id="btn-topo" aria-label="Voltar ao topo">
+
+    ↑
+
+  </button>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <p class="footer-copy">
+      © 2026 Felipe Hellmann
+    </p>
+
+    <div class="footer-links">
+
+      <a href="https://github.com/Akyelll" target="_blank">
+
+        GitHub
+
+      </a>
+
+      <a href="https://linkedin.com/in/seuusuario" target="_blank">
+
+        LinkedIn
+
+      </a>
+
+      <a href="https://akyelll.github.io/portfolio/" target="_blank">
+
+        Portfólio
+
+      </a>
+
+    </div>
+
+  </footer>
+
+  <!-- SCRIPT -->
   <script>
+
     const header = document.querySelector(".header");
+    const btnTopo = document.getElementById("btn-topo");
+
+    const btnPlanetas = document.querySelector(".toggle-planetas");
+    const listaPlanetas = document.querySelector(".menu-planetas");
 
     window.addEventListener("scroll", () => {
+
       if (window.scrollY > 50) {
         header.classList.add("sumir");
       } else {
         header.classList.remove("sumir");
       }
+
+      if (window.scrollY > 300) {
+        btnTopo.style.display = "block";
+      } else {
+        btnTopo.style.display = "none";
+      }
+
     });
-    const btnPlanetas = document.querySelector(".toggle-planetas");
-    const listaPlanetas = document.querySelector(".menu-planetas");
 
     btnPlanetas.addEventListener("click", () => {
+
       listaPlanetas.classList.toggle("ativo");
+
     });
-    const btnTopo = document.getElementById("btn-topo");
 
-// aparece quando desce
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 300) {
-    btnTopo.style.display = "block";
-  } else {
-    btnTopo.style.display = "none";
-  }
-});
+    btnTopo.addEventListener("click", () => {
 
-// volta pro topo suave
-btnTopo.addEventListener("click", () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
-  });
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+
+    });
+
   </script>
+
 </body>
+
 </html>

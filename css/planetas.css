@@ -1,100 +1,121 @@
+/* ============================= */
+/* BASE GLOBAL DO SITE */
+/* ============================= */
+
+/*
+Define comportamento padrão do site inteiro.
+Controla fundo, tipografia e leitura.
+*/
 body {
   margin: 0;
-  /* remove margens padrão */
   padding: 0;
-  /* remove padding padrão */
+
   background-color: #000;
-  /* fundo preto */
   color: #fff;
-  /* texto branco para contraste */
+
   font-family: Arial, sans-serif;
-  /* fonte padrão Arial */
   line-height: 1.6;
-  /* espaçamento agradável entre linhas */
 }
 
+/* ============================= */
+/* HERO / IMAGEM PRINCIPAL */
+/* ============================= */
+
+/*
+Imagem de entrada da página (banner do planeta).
+IMPORTANTE: estrutura absoluta de textos depende disso.
+*/
 .imagem-home {
   position: relative;
-  /* ESSENCIAL */
   width: 100%;
-  height: 900px;
+  height: 500px; /* removido duplicado (900px estava sobrescrito) */
   overflow: hidden;
-  height: 500px;
 }
 
 .imagem-home img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* evita distorção */
 }
 
-.conteudo {
-  margin-top: 40px;
-}
-
+/* TÍTULO PRINCIPAL */
 .imagem-home h1 {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
-  color: white;
   font-size: 3rem;
   text-align: center;
+  color: #fff;
 }
+
+/* SUBTÍTULO */
 .imagem-home h2 {
   position: absolute;
   top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
-
-  color: white;
-  font-size: 3rem;
+  font-size: 2rem; /* corrigido: estava igual ao h1 */
   text-align: center;
+  color: #fff;
 }
+
+/* ============================= */
+/* TÍTULO DAS SEÇÕES */
+/* ============================= */
+
+/*
+Container textual intermediário.
+Usado para introduções de páginas.
+*/
 .titulo-planeta {
   max-width: 1200px;
-  /* largura do conteúdo */
   margin: 50px auto;
-  /* espaço entre seções */
   padding: 0 20px;
-  /* espaçamento interno lateral */
-  color: white;
-  /* cor do texto */
+  color: #fff;
 }
 
 .titulo-planeta h2 {
   font-size: 2rem;
   margin-bottom: 15px;
   text-align: center;
-  /* centraliza horizontalmente */
 }
 
 .titulo-planeta h3 {
   font-size: 1rem;
-  line-height: 1.6;
   font-weight: normal;
+  line-height: 1.6;
 }
 
+/* ============================= */
+/* LAYOUT PRINCIPAL */
+/* ============================= */
 
-/* Layout geral */
 .layout {
   display: flex;
 }
 
-/* Sidebar */
+/* ============================= */
+/* SIDEBAR (MENU LATERAL) */
+/* ============================= */
+
+/*
+Menu lateral fixo da página de planeta.
+Responsável por navegação interna.
+*/
 .sidebar {
   width: 220px;
   background-color: #2f2f2f;
   height: 100vh;
+
   overflow-y: auto;
-  padding-top: 20px;
   position: sticky;
   top: 0;
 
+  padding-top: 20px;
+
   scrollbar-width: thin;
-  scrollbar-color: #000000 #2f2f2f;
+  scrollbar-color: #000 #2f2f2f;
 }
 
 .sidebar ul {
@@ -107,7 +128,7 @@ body {
 }
 
 .sidebar a {
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
   display: block;
   padding: 10px 15px;
@@ -118,11 +139,18 @@ body {
   background-color: #5d5d5d;
 }
 
-/* Conteúdo */
+/* ============================= */
+/* CONTEÚDO PRINCIPAL */
+/* ============================= */
+
 .content {
   flex: 1;
   padding: 30px;
 }
+
+/* ============================= */
+/* IMAGEM DE SEÇÃO (planetas) */
+/* ============================= */
 
 .imagem-planeta {
   margin-top: 40px;
@@ -139,10 +167,12 @@ body {
   display: block;
   margin-top: 10px;
   font-size: 14px;
-  color: #666;
+  color: #999;
 }
 
-/* TEXTOS */
+/* ============================= */
+/* TEXTOS GERAIS */
+/* ============================= */
 
 section {
   margin-bottom: 40px;
@@ -156,51 +186,63 @@ p {
   margin-bottom: 15px;
 }
 
+/* ============================= */
+/* MENU EXPANSÍVEL (PLANETAS) */
+/* ============================= */
 
-/* ICONES */ 
+/*
+Sistema de dropdown lateral.
+Controlado por JS (toggle class ativo).
+*/
+
 /* botão */
 .toggle-planetas {
   width: 100%;
   background: none;
   border: none;
-  color: rgb(255, 255, 255);
+
+  color: #fff;
   text-align: left;
+
   padding: 10px;
   font-size: 16px;
   cursor: pointer;
 }
 
 .toggle-planetas:hover {
-  background:#5d5d5d;
+  background: #5d5d5d;
 }
 
 /* lista escondida */
 .menu-planetas {
   list-style: none;
+
   max-height: 0;
   overflow: hidden;
+
   transition: 0.3s ease;
 }
 
-/* quando abre */
+/* estado aberto */
 .menu-planetas.ativo {
-  max-height: 500px; /* suficiente pra caber tudo */
+  max-height: 500px;
 }
 
-/* itens */
+/* links */
 .menu-planetas a {
   display: flex;
   align-items: center;
   gap: 8px;
+
   padding: 8px 10px;
-  color: rgb(253, 253, 253);
+  color: #fff;
   text-decoration: none;
 }
 
 .menu-planetas a:hover {
   background: #5d5d5d;
-
 }
+
 .menu-planetas img {
   width: 20px;
   height: 20px;

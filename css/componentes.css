@@ -1,119 +1,122 @@
-/* Navbar principal */
+/* =======================================================
+   BASE - NAVBAR (estrutura global do topo)
+   ======================================================= */
+
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 05px 60px;
+  display: flex; /* ativa layout horizontal */
+  justify-content: space-between; /* separa logo e menu */
+  align-items: center; /* centraliza verticalmente */
+  padding: 5px 60px; /* espaçamento interno (corrigido 05 → 5) */
 }
 
-/* Grupo logo + nome */
+/* Grupo: logo + nome */
 .brand {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  /* espaço entre logo e texto */
+  display: flex; /* alinha horizontalmente */
+  align-items: center; /* centraliza vertical */
+  gap: 20px; /* espaço entre elementos */
 }
 
-/* Diminuir logo */
+/* Logo principal */
 .brand img {
-  width: 80px;
-  height: auto;
+  width: 80px; /* tamanho fixo controlado */
+  height: auto; /* mantém proporção */
 }
 
-/* Estilo do nome */
+/* Nome do sistema */
 .brand-name {
-  color: rgb(255, 255, 255);
+  color: #fff; /* branco puro (mais consistente) */
   font-size: 1.2rem;
   font-weight: bold;
 }
 
-/* CONTAINER DOS CARDS */
-.cards-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  max-width: 1100px;
-  /* aumenta para caber 3 cards confortáveis */
-  margin: 0 auto;
-}
-
-.card-planeta {
-  flex: 0 0 calc(33.333% - 20px);
-  /* largura fixa para 3 por linha */
-  max-width: none;
-  /* remove limite que atrapalha */
-}
+/* =======================================================
+   COMPONENTE - BOTÕES
+   ======================================================= */
 
 button {
-  background-color: rgba(255, 255, 255, 0.1);
-  border: none;
-  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.1); /* leve transparência */
+  border: none; /* remove borda padrão */
+  cursor: pointer; /* indica interação */
 }
 
-/* ============================= */
-/* CARD PLANETA */
-/* ============================= */
+/* =======================================================
+   LAYOUT - CARDS (container geral)
+   ======================================================= */
+
+.cards-container {
+  display: flex; /* linha de cards */
+  flex-wrap: wrap; /* quebra linha automaticamente */
+  gap: 20px; /* espaçamento entre cards */
+  justify-content: center; /* centraliza no eixo horizontal */
+  max-width: 1100px; /* limite de largura desktop */
+  margin: 0 auto; /* centraliza na tela */
+}
+
+/* =======================================================
+   COMPONENTE - CARD PLANETA (estrutura principal)
+   ======================================================= */
+
 .card-planeta {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
+  display: flex; /* layout interno horizontal */
+  align-items: flex-start; /* alinha topo */
+  justify-content: space-between; /* separa colunas */
   background-color: rgba(20, 20, 20, 0.9);
   border-radius: 10px;
   padding: 20px;
   margin-bottom: 30px;
   color: #f1f1f1;
-  max-width: 350px;
-  /* tamanho máximo do card */
-  flex: 1 1 300px;
-  /* flexível e responsivo */
+  flex: 1 1 300px; /* responsivo base */
+  max-width: 350px; /* limite de crescimento */
   cursor: pointer;
-  /* indica que a imagem é clicável */
-  transition: all 0.3s;
+  transition: all 0.3s ease; /* suaviza hover */
 }
 
-/* Efeito hover */
+/* Hover do card */
 .card-planeta:hover {
   background-color: rgba(255, 255, 255, 0.1);
   transform: translateY(-3px);
 }
 
-/* ============================= */
-/* FOTO DO PLANETA */
-/* ============================= */
+/* =======================================================
+   COMPONENTE - COLUNA FOTO
+   ======================================================= */
+
 .col-foto {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* empilha imagem e nome */
   align-items: center;
-  flex: 0 0 auto;
-  /* mantém tamanho da imagem */
+  flex: 0 0 auto; /* não cresce nem encolhe */
   margin-right: 20px;
 }
 
+/* imagem do planeta */
 .col-foto img {
   width: 120px;
   height: 120px;
-  border-radius: 50%;
-  object-fit: cover;
+  border-radius: 50%; /* círculo */
+  object-fit: cover; /* corta sem distorcer */
   margin-bottom: 10px;
 }
 
+/* nome do planeta */
 .col-foto .nome {
   font-size: 1.2rem;
   font-weight: bold;
   text-align: center;
 }
 
-/* ============================= */
-/* DADOS DO PLANETA */
-/* ============================= */
+/* =======================================================
+   COMPONENTE - COLUNA DADOS
+   ======================================================= */
+
 .col-dados {
-  flex: 1;
+  flex: 1; /* ocupa espaço restante */
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
+/* cada informação */
 .col-dados .item {
   background-color: rgba(50, 50, 50, 0.7);
   padding: 10px;
@@ -121,10 +124,34 @@ button {
   font-size: 0.95rem;
 }
 
-/* ============================= */
-/* RESPONSIVO - CELULAR */
-/* ============================= */
-@media (max-width: 767px) {
+/* =======================================================
+   INTERAÇÃO - RESPONSIVO (BREAKPOINTS)
+   ======================================================= */
+
+/* =========================
+   TABLET GRANDE / NOTEBOOK PEQUENO
+   ========================= */
+@media (max-width: 1024px) {
+  .cards-container {
+    max-width: 900px;
+    gap: 16px;
+  }
+
+  .card-planeta {
+    max-width: 100%;
+  }
+}
+
+/* =========================
+   TABLET
+   ========================= */
+@media (max-width: 720px) {
+  .navbar {
+    padding: 10px 20px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
   .cards-container {
     flex-direction: column;
     align-items: center;
@@ -141,3 +168,65 @@ button {
     margin-bottom: 15px;
   }
 }
+
+/* =========================
+   CELULAR
+   ========================= */
+@media (max-width: 480px) {
+  .brand-name {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .brand img {
+    width: 60px;
+  }
+
+  .card-planeta {
+    padding: 15px;
+  }
+
+  .col-foto img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .col-dados .item {
+    font-size: 0.85rem;
+  }
+}
+
+/* =======================================================
+   PAINEL DE ENTENDIMENTO DO CSS
+   ======================================================= */
+
+/*
+NAVBAR:
+- controla topo do site
+- usa flex para separar logo e menu
+
+CARDS-CONTAINER:
+- organiza cards em grade flexível
+- limita largura para manter estética
+
+CARD-PLANETA:
+- componente principal visual
+- divide em imagem + dados
+
+COL-FOTO:
+- controla imagem circular do planeta
+- centraliza nome abaixo
+
+COL-DADOS:
+- lista de informações estruturadas
+
+RESPONSIVIDADE:
+- 1024px → ajustes de desktop pequeno
+- 720px → tablet (mudança de layout)
+- 480px → celular (redução de escala)
+
+REGRA GERAL:
+- flex para estrutura
+- gap para espaçamento
+- media queries para adaptação
+*/
